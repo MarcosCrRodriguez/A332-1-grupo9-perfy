@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Mercado Gamer</title>   
-    <script src="https://kit.fontawesome.com/bbe53e2826.js" crossorigin="anonymous"></script> 
+    <title>Productos - Mercado Gamer</title>
+    <script src="https://kit.fontawesome.com/bbe53e2826.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/logofavicon.ico">
-    <script>
-        function toggleDescripcion(id) {
-            var descripcion = document.getElementById(id);
-            if (descripcion.style.display === "none") {
-                descripcion.style.display = "block";
-            } else {
-                descripcion.style.display = "none";
-            }
+    <style>
+       
+     table {
+        max-width: 940px; 
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto; 
         }
-    </script>
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .btn-carrito {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div style=" display: flex; justify-content: space-between; align-items: center; padding: 10px;">
             <div>
-                <h1 style="margin: 0;">Mercado Gamer</h1> 
+                <h1 style="margin: 0;">Mercado Gamer</h1>
                 <!-- <img src="./img/logo2.png" alt="logo" width="50px"; height="auto";> -->
             </div>
             <nav style="display: flex;">
@@ -31,7 +46,7 @@
                 <a href="contacto.html" style="margin-left: 20px; font-size: 20px; color: #333;">Contacto</a>
             </nav>
         </div>
-    </header> 
+    </header>
     <hr>
     <main>
         <section>
@@ -39,154 +54,96 @@
             <table align="center" cellspacing="20">
                 <tr>
                     <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/3276/3276_1_1659520030.jpg" alt="Producto 1" width="200" height="150">
+                        <img src="https://sistema.langtecnologia.com.ar/img/elang/3276/3276_1_1659520030.jpg"
+                            alt="Producto 1" width="200" height="150">
                         <h2>Computadora A6 - 1TB - 4GB - Gabinete Kit - Monitor 20</h2>
-                        <p id="descripcion1" style="display: none;">PROCESADOR AMD FM2+
-                            MOTHER FM2+ MSI/ASROCK
-                            MEMORIA 4GB DDR3 Kingston/Markvision/Corsair/Adata/Crucial
-                            DISCO 1TB SATA III Wd/Seagate/Hitachi/Samsung
-                            GABINETE Kit Jalatek/Kanji/Sentey
-                            MONITOR 20"
+                        <p>Computadora armada e instalada con procesador AMD FM2+, mother FM2+ MSI/ASROCK, memoria 4GB DDR3 Kingston/Markvision/Corsair/Adata/Crucial, disco 1TB SATA III Wd/Seagate/Hitachi/Samsung, gabinete Kit Jalatek/Kanji/Sentey y monitor 20"
                         </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion1')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
                         <p>Precio: $416.573</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
+                        <button class="btn-carrito">Agregar al Carrito</button>
                     </td>
                     <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_602179-MLA74327313759_012024-F.webp" alt="Producto 2" width="200" height="150">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_602179-MLA74327313759_012024-F.webp"
+                            alt="Producto 2" width="200" height="150">
                         <h2>Pc De Oficina Intel I3-12100 8gb Ram 256gb Ssd + Kit</h2>
-                            <p id="descripcion2" style="display: none;">PROCESADOR INTEL CORE I3 12100 LGA 1700
-                                MOTHER ASUS PRIME H610M-K D4
-                                MEMORIA RAM PATRIOT 8GB DDR4-3200 PC
-                                DISCO SSD PATRIOT P300 256GB M.2 PCI-E
-                                NSX GABINETE OFFICE M06 SLIM + FUENTE
-                                .KIT TECLADO Y MOUSE WIRELESS KY810
-                                !!NO INCLUYE MONITOR!!</p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion2')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                         </form>
+                        <p>Pc de oficina armada e instalada con procesador Intel Core i3 12100, mother Asus Prime H610M-K D4, memoria RAM Patriot 8GB DDR4-3200, disco SSD Patriot P300 256GB M.2 PCI-E, gabinete NSX Office M06 Slim con fuente, kit teclado y mouse wireless KY810. No incluye monitor</p>
                         <p>Precio: $549.999</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
+                        <button class="btn-carrito">Agregar al Carrito</button>
                     </td>
                     <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_808247-MLA51604619711_092022-F.webp" alt="Producto 3" width="200" height="150">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_808247-MLA51604619711_092022-F.webp"
+                            alt="Producto 3" width="200" height="150">
                         <h2>Pc Armada + Monitor 24 Ssd 480 Ram 16 + Kit W10p</h2>
-                        <p id="descripcion3" style="display: none;">
-                            CPU armado e instalado con Windows 10 pro 64 bits + programas + juegos, teclado, mouse ,Pantalla
+                        <p>
+                            CPU armado e instalado con Windows 10 pro 64 bits + programas + juegos, teclado, mouse
+                            ,Pantalla
                         </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion3')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
                         <p>Precio: $1.538.944</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
+                        <button class="btn-carrito">Agregar al Carrito</button>
                     </td>
                 </tr>
                 <tr>
                     <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/2798/2798_1_1659520420.jpg" alt="Producto 1" width="200" height="150">
+                        <img src="https://sistema.langtecnologia.com.ar/img/elang/2798/2798_1_1659520420.jpg"
+                            alt="Producto 1" width="200" height="150">
                         <h2>Pc Armada Ryzen 3 - 8GB - SSD 120GB - HDD 1TB - Gabinete Kit</h2>
-                        <p id="descripcion4" style="display: none;">
-                            PROCESADOR Ryzen 3
-                            MOTHER A320 MSI/ASROCK/ASUS/GIGABYTE
-                            MEMORIA 8GB DDR4 Kingston/Markvision/Corsair/Adata/Crucial
-                            DISCO 120 SSD Kingston/WD/Markvisiton/Gigabyte/Hp/Adata
-                            DISCO 1TB SATA III Wd/Seagate/Hitachi/Samsung
-                            GABINETE Kit Jalatek/Kanji/Sentey
+                        <p>
+                            PC armada e instalada con procesador Ryzen 3, mother A320 MSI/ASROCK/ASUS/GIGABYTE, memoria 8GB DDR4 Kingston/Markvision/Corsair/Adata/Crucial, disco SSD 120GB Kingston/WD/Markvisiton/Gigabyte/Hp/Adata, disco 1TB SATA III Wd/Seagate/Hitachi/Samsung y gabinete Kit Jalatek/Kanji/Sentey.
                         </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion4')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
                         <p>Precio: $403.220</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
+                        <button class="btn-carrito">Agregar al Carrito</button>
                     </td>
                     <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/8244/8244_1_1673005559.jpg" alt="Producto 2" width="200" height="150">
-                        <h2>Pc Armada I5F - 16GB RGB - 250SSD - 600W 80 plus - Rtx 2060 6GB - Gabinete Gamer CR1280 RGB Riotoro</h2>
-                        <p id="descripcion5" style="display: none;">
-                            Procesador: I5 10400maF
-                            Mother: Mother H510H6-M2 Durathon2 1200 ECS 2
-                            Memoria Ram: 2 x RGB 8GB PNG
-                            Almacenamiento: 250 NVMe name p2 Crucial
-                            Gabinete: Gabinete Gamer CR1280 RGB Panel templado Riotoro
-                            Placa video Rtx2060 OC 6GB
-                            Fuente 600w jalatec 80 plus
+                        <img src="https://sistema.langtecnologia.com.ar/img/elang/8244/8244_1_1673005559.jpg"
+                            alt="Producto 2" width="200" height="150">
+                        <h2>Pc Armada I5F - 16GB RGB - 250SSD - 600W 80 plus - Rtx 2060 6GB - Gabinete Gamer CR1280 RGB
+                            Riotoro</h2>
+                        <p>
+                            PC gamer armada e instalada con procesador I5 10400F, mother H510H6-M2 Durathon2 1200 ECS 2, memoria RAM 2x8GB RGB PNG, almacenamiento SSD NVMe 250GB Crucial p2, gabinete gamer Riotoro CR1280 RGB con panel templado, placa de video Rtx 2060 OC 6GB y fuente 600W Jalatec 80 Plus.
                         </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion5')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
                         <p>Precio: $1.246.995</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
+                        <button class="btn-carrito">Agregar al Carrito</button>
                     </td>
                     <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_639792-MLA70865741639_082023-F.webp" alt="Producto 3" width="200" height="150">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_639792-MLA70865741639_082023-F.webp"
+                            alt="Producto 3" width="200" height="150">
                         <h2>Pc Armada De Oficina Nsx R7 5700g 8gb Ram 240gb Ssd + Kit</h2>
-                        <p id="descripcion6" style="display: none;">PROCESADOR AMD RYZEN 7 5700G AM4
-                            MOTHER ASUS PRIME A520M-K AM4
-                            MEMORIA RAM PATRIOT 8GB DDR4-3200 PC
-                            DISCO SSD LEXAR NM620 256GB M.2 NVME
-                            NSX GABINETE OFFICE SERIES C31 + FUENTE
-                            .SERVICIO ENSAMBLE DE MAQUINA
-                            .KIT TECLADO Y MOUSE WIRELESS KY810
-                            AURICULAR QBOX OFICINA H003
-                            SISTEMA OPERATIVO LICENCIA WINDOWS 11 (30 DIAS)
-                            
-                            !!NO INCLUYE MONITOR!!
+                        <p>PC de oficina armada e instalada con procesador AMD Ryzen 7 5700G AM4, mother Asus Prime A520M-K AM4, memoria RAM Patriot 8GB DDR4-3200, disco SSD Lexar NM620 256GB M.2 NVMe, gabinete NSX Office Series C31 con fuente, servicio de ensamble de máquina, kit teclado y mouse wireless KY810, auricular QBox Oficina H003 y sistema operativo con licencia Windows 11 (30 días). No incluye monitor.
                         </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion6')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
+
                         <p>Precio: $689.999</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
+                        <button class="btn-carrito">Agregar al Carrito</button>
+
                     </td>
                 </tr>
             </table>
         </section>
-         <div style="position: fixed; top: 85px; right: 20px;">
-        <a href="carrito.html">
-            <button style="background-color: #007bff; color: white; padding: 10px; border: none; border-radius: 5px;">
-                <img src="https://th.bing.com/th/id/R.d01f6a524827d080143ba7b6a4fd2961?rik=csLHhRB6q%2f4LMg&pid=ImgRaw&r=0" alt="Carrito" width="20" height="20" style="vertical-align: middle;">
-                Ir al Carrito
-            </button>
-        </a>
-         </div>
+        <div style="position: fixed; top: 85px; right: 20px;">
+            <a href="carrito.html">
+                <button class="btn-carrito">
+                    <img src="https://th.bing.com/th/id/R.d01f6a524827d080143ba7b6a4fd2961?rik=csLHhRB6q%2f4LMg&pid=ImgRaw&r=0"
+                        alt="Carrito" width="20" height="20" style="vertical-align: middle;">
+                    Ir al Carrito
+                </button>
+            </a>
+        </div>
     </main>
     <footer style="text-align:center;background-color:steelblue">
         <p>Redes Sociales</p>
         <p>
-            <a href="https://www.youtube.com" target ="_blank"><i class="fa-brands fa-youtube" style="color: #000000"></i></a> 
-        
-            <a href="https://www.instagram.com" target ="_blank"><i class="fa-brands fa-instagram" style="color: #000000"></i></a> 
-    
-            <a href="https://www.facebook.com" target ="_blank"><i class="fa-brands fa-facebook" style="color: #000000"></i></a> 
-        
-            <a href="https://www.WhatsApp.com" target ="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000"></i></a>                 
-        </p>        
+            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"
+                    style="color: #000000"></i></a>
+
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"
+                    style="color: #000000"></i></a>
+
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"
+                    style="color: #000000"></i></a>
+
+            <a href="https://www.WhatsApp.com" target="_blank"><i class="fa-brands fa-whatsapp"
+                    style="color: #000000"></i></a>
+        </p>
     </footer>
 </body>
+
 </html>
