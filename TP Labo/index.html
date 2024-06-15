@@ -1,85 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Mercado Gamer</title>   
-    <script src="https://kit.fontawesome.com/bbe53e2826.js" crossorigin="anonymous"></script> 
-    <link rel="icon" href="img/logofavicon.ico">
-</head>
-<body>
-    <header>
-        <div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="productos.html">Productos</a>
-                <a href="acerca-de.html">Acerca De</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfy</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="gradient-background w-100">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="p-3 ml-5">
+            <h1 class="text-white my-4">Descubrí la bebida del verano</h1>
+            <h5 class="text-white my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
+            <button class="btn btn-primary my-4">Conseguí la tuya</button>
+          </div>
         </div>
-    </header> 
-    <hr>
-    <main>
-        <section>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <h1>Inicio</h1>
+        <div class="col-md-6">
+          <img
+            srcset="
+    //drinkperfy.com/cdn/shop/files/perfy_web_banner_2024_copy.png?v=1712005018&amp;width=180 180w 275h,//drinkperfy.com/cdn/shop/files/perfy_web_banner_2024_copy.png?v=1712005018&amp;width=360 360w 551h,//drinkperfy.com/cdn/shop/files/perfy_web_banner_2024_copy.png?v=1712005018&amp;width=540 540w 826h,//drinkperfy.com/cdn/shop/files/perfy_web_banner_2024_copy.png?v=1712005018&amp;width=720 720w 1101h,//drinkperfy.com/cdn/shop/files/perfy_web_banner_2024_copy.png?v=1712005018&amp;width=900 900w 1377h,//drinkperfy.com/cdn/shop/files/perfy_web_banner_2024_copy.png?v=1712005018&amp;width=1080 1080w 1652h,//drinkperfy.com/cdn/shop/files/perfy_web_banner_2024_copy.png?v=1712005018&amp;width=1178x 1178w 1802h"
+            alt="Cans of Perfy"
+            width="500"
+            height="750"
+            class="absolute hero-image z-20"
+          />
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f9d968"
+        fill-opacity="1"
+        d="M0,96L48,90.7C96,85,192,75,288,80C384,85,480,107,576,133.3C672,160,768,192,864,181.3C960,171,1056,117,1152,90.7C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        data-darkreader-inline-fill=""
+        style="--darkreader-inline-fill: #80003a"
+      ></path>
+    </svg>
+
+    <!-- Carousel -->
+
+    <h2 class="text-center text-danger m-0" style="background-color: #f9d968">
+      ¡Elegí la que mejor pegue con tu onda! 😎
+    </h2>
+    <div class="carousel-container py-2">
+      <div class="card carousel-card" onclick="selectCard(0)">
+        <div class="card-content h-100">
+          <div class="row d-flex h-100">
+            <div
+              class="col d-flex flex-column align-items-center justify-content-center"
+            >
+              <h3 class="text-white">Novedad</h3>
+              <p class="text-white">¡Sabor explosivo!</p>
+              <button class="btn btn-primary text-uppercase">Comprar</button>
             </div>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <p>Esta es la página principal de la Tienda, aquí encontraras promociones y novedades de nuestros productos.</p>
+            <div
+              class="col d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="carousel-img"
+                src="./img/perfy-DrPerfy.png"
+                alt="Product 1"
+              />
             </div>
-            <!-- titulo -->
-            <!-- 3 img promociones prod (kit comp) -->
-            <!-- <div style="display: flex; justify-content: center; align-items: center;">
-                <h2>Promociones</h2>
-            </div> -->
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="#"><img src="Recursos\Promociones\promo-razer.jpg" alt="Promo-Gamer" width="400" height="240"></a>
-                        </td>
-                        <td>
-                            <a href="#"><img src="Recursos\Promociones\promo-gamer.jpg" alt="Promo-Gamer" width="400" height="240"></a>
-                        </td>
-                        <td>
-                            <a href="#"><img src="Recursos\Promociones\promo-pc.jpg" alt="Promo-Gamer" width="400" height="240"></a>
-                        </td>
-                    </tr>
-                </table>
-            </div> <br>
-            <!-- titulo -->
-            <!-- 3 img novedades (ultimos prod) -->
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <h3>Novedades</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card carousel-card" onclick="selectCard(1)">
+        <div class="card-content h-100">
+          <div class="row d-flex h-100">
+            <div
+              class="col d-flex flex-column align-items-center justify-content-center"
+            >
+              <h3 class="text-white">Novedad</h3>
+              <p class="text-white">que odnaaaaaa!</p>
+              <button class="btn btn-primary text-uppercase">Comprar</button>
             </div>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="#"><img src="Recursos\Novedades\nov-mother.jpg" alt="Novedad-Gamer" width="150" height="100"></a>
-                        </td>
-                        <td>
-                            <a href="#"><img src="Recursos\Novedades\nov-video.jpg" alt="Novedad-Gamer" width="150" height="100"></a>
-                        </td>
-                        <td>
-                            <a href="#"><img src="Recursos\Novedades\von-mouse-razer.jpg" alt="Novedad-Gamer" width="150" height="100"></a>
-                        </td>
-                    </tr>
-                </table>
+            <div
+              class="col d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="carousel-img"
+                src="./img/perfy-TropicaCitrus.png"
+                alt="Product 1"
+              />
             </div>
-        </section>
-    </main>
-    <footer style="text-align:center;background-color:steelblue">
-        <p>Redes Sociales</p>
-        <p>
-            <a href="https://www.youtube.com" target ="_blank"><i class="fa-brands fa-youtube" style="color: #000000"></i></a> 
-        
-            <a href="https://www.instagram.com" target ="_blank"><i class="fa-brands fa-instagram" style="color: #000000"></i></a> 
-    
-            <a href="https://www.facebook.com" target ="_blank"><i class="fa-brands fa-facebook" style="color: #000000"></i></a> 
-        
-            <a href="https://www.WhatsApp.com" target ="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000"></i></a>                 
-        </p>        
-    </footer>
-</body>
+          </div>
+        </div>
+      </div>
+
+      <div class="card carousel-card" onclick="selectCard(2)">
+        <div class="card-content h-100">
+          <div class="row d-flex h-100">
+            <div
+              class="col d-flex flex-column align-items-center justify-content-center"
+            >
+              <h3 class="text-white">Novedad</h3>
+              <p class="text-white">Texto!</p>
+              <button class="btn btn-primary text-uppercase">Comprar</button>
+            </div>
+            <div
+              class="col d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="carousel-img"
+                src="./img/perfy-TropicaCitrus.png"
+                alt="Product 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#9ed8db"
+        fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,160C672,128,768,96,864,96C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        data-darkreader-inline-fill=""
+        style="--darkreader-inline-fill: #80003a"
+      ></path>
+    </svg>
+
+    <!-- Info -->
+
+    <div style="background-color: #9ed8db">
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <div class="card info-card card-1">Sin azúcar agregada</div>
+          </div>
+          <div class="col">
+            <div class="card info-card card-2">Gas ligero</div>
+          </div>
+          <div class="col">
+            <div class="card info-card card-3">Texto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wave-container">a</div>
+
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
 </html>
