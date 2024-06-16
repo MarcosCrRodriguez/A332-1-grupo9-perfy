@@ -1,0 +1,128 @@
+:root{
+    --colorFondoNav: #FF4F6F; 
+    --colorFondoFooter: #AC97C0;
+    --colorBotonEnviar: #AC97C0;
+}
+.containerMain{    
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    grid-template-areas: "form mapa";
+    height: 100%;
+    align-self: stretch;
+} 
+.form{
+    grid-area: form;
+}
+.mapa{
+    grid-area: mapa;
+}
+/* .contenido{
+    grid-area: contenido;
+}
+.footer{
+    grid-area: footer;
+} */
+.item{
+    background-color: grey;
+    
+    
+}
+body{
+    padding: 0;
+    margin: 0;    
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /*flex-direction: column; - el main no se acomoda - me queda corto*/
+    min-width: 250px;           
+}
+header{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    height: 140px;
+}
+
+#footer{
+    width: 100%;   
+    background-color: var(--colorFondoFooter);     
+    display: flex;
+    height: 300px;    
+    margin-top: auto;
+}
+.navbar{
+    background-color: var(--colorFondoNav);    
+}
+.navbar-toggler{   
+    border: none; 
+    color: transparent;
+}
+#iconoMenu{
+    width: 30px;
+    height: 30px;
+}
+#carrito{
+    width: 35px;
+    height: 35px;
+}
+/* @media (max-width: 1000px) {
+    #navbarNavDropdown {
+        display: none!important;
+    }
+} */
+
+@media (max-width: 1600px) {
+    #navMed {        
+        width: 66.67%;
+    }  
+}
+@media (max-width: 800px) {   
+    #footerDiv{        
+        display: flex;
+        justify-items: flex-start;
+        
+    }
+    #logoFooter{
+        display: none;
+    } 
+    /* hr{
+        display: none;
+    } */
+    #redesFooter{
+        display: none;
+    }    
+    /* #copyright{
+        display: none;
+    } */
+   
+}
+@media (max-width: 600px) {
+    .containerMain{
+        grid-template: 1fr 1fr / 100%;
+        grid-template-areas: "form"
+                                "mapa";
+    }
+}
+.raleway-font{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;  
+    font-style: normal;      
+}
+.li{
+    color: white;
+}
+#divForm{    
+    background-color: #F8FA9E;    
+}
+#divMapa{
+    background-color: white;
+}
+#btnConsulta{
+    background-color: var(--colorBotonEnviar);
+}
+
+
+
