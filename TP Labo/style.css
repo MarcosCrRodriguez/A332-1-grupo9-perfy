@@ -5,6 +5,9 @@
   font-style: normal;
   font-variation-settings: "XROT" 0, "YROT" 0;
 }
+/* body {
+    background-color: var(--yellow-color);
+} */
 
 /* :root {
   --pink-color: #ff7fb9;
@@ -17,17 +20,19 @@
   --dark-color: #343a40;
   --lightie-color: #f8e6a0;
 } */
+
 :root {
-    --pink-color: #FF4F6F;
-    --orange-color: #FA864D;
-    --yellow-color: #F8FA9E;
-    --light-blue-color: #9ed8db;
-    --purple-color: #886AA5;
-    --danger-color: #ff0066;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --lightie-color: #FCFDD8;
-  }
+  --pink-color: #ff4f6f;
+  --orange-color: #fa864d;
+  --yellow-color: #f8fa9e;
+  --light-blue-color: #9ed8db;
+  --purple-color: #886aa5;
+  --danger-color: #ff0066;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --lightie-color: #fcfdd8;
+}
+
 .gradient-background {
   background: linear-gradient(184deg, #ea7e61, #ff7fb9);
   background-size: 400% 400%;
@@ -89,23 +94,30 @@
   }
 }
 
-
-
 /* carousel */
+.carousel-wave-container {
+  background-color: var(--yellow-color);
+}
+
 .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 80vh;
   background-color: var(--yellow-color);
   position: relative;
   overflow: hidden;
 }
 
+.carousel-div {
+  background-color: var(--yellow-color);
+  justify-content: center;
+}
+
 .carousel-card {
   background-color: var(--pink-color);
-  width: 400px;
-  height: 400px;
+  width: 700px;
+  height: 700px;
   position: absolute;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -114,8 +126,8 @@
 }
 
 .carousel-img {
-  width: 150px;
-  height: 280px;
+  width: 350px;
+  height: 500px;
 }
 
 .btn-primary {

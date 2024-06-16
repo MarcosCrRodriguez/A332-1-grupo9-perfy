@@ -36,7 +36,7 @@ function updateCards() {
                 card.style.zIndex = 1;
                 break;
             case 1: // Centro
-                card.style.transform = 'translateX(0%) scale(1.1)';
+                card.style.transform = 'translateX(0%) scale(1.05)';
                 card.style.opacity = 1;
                 card.style.zIndex = 2;
                 break;
