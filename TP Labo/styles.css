@@ -124,5 +124,105 @@ header{
     background-color: var(--colorBotonEnviar);
 }
 
-
-
+/* Estilos para el formulario de login */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #f8f9fa;
+  }
+  
+  .login-wrap {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .login-form .form-control {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .login-form .form-control:focus {
+    border-color: #AC97C0;
+    box-shadow: 0 0 0 0.2rem rgba(172, 151, 192, 0.25);
+  }
+  
+  .login-form .btn-primary {
+    background: #AC97C0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 48px;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form .btn-primary:hover,
+  .login-form .btn-primary:focus {
+    background: #946db8;
+  }
+  
+  .checkbox-wrap {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #e6e6e6;
+    border-radius: 2px;
+  }
+  
+  .checkbox-wrap input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-wrap .checkmark:after {
+    content: "\2713";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    color: #fff;
+  }
+  
+  .checkbox-primary {
+    color: #AC97C0;
+  }
+  
+  .checkbox-primary input:checked ~ .checkmark {
+    background-color: #AC97C0;
+  }
+  
+  .forgot-password {
+    color: #1D84B5;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover {
+    color: #155d82;
+    text-decoration: underline;
+  }
+  
