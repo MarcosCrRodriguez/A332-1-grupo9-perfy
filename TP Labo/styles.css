@@ -34,7 +34,10 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     /*flex-direction: column; - el main no se acomoda - me queda corto*/
-    min-width: 250px;           
+    min-width: 250px;    
+    
+    font-family: 'Raleway', sans-serif;
+    background: #f8f9fa;
 }
 header{
     padding: 0;
@@ -125,10 +128,7 @@ header{
 }
 
 /* Estilos para el formulario de login */
-body {
-    font-family: 'Raleway', sans-serif;
-    background: #f8f9fa;
-  }
+
   
   .login-wrap {
     background: #fff;
@@ -226,3 +226,33 @@ body {
     text-decoration: underline;
   }
   
+
+  /* Estilos para el carrito */
+  .btn-custom-primary {
+    background-color: #AC97C0;
+    border-color: #AC97C0;
+    color: white;
+}
+.btn-custom-primary:hover {
+    background-color: #9A82B0;
+    border-color: #9A82B0;
+    color: white;
+}
+.btn-custom-secondary {
+    background-color: #AC97C0;
+    border-color: #AC97C0;
+    color: white;
+}
+.btn-custom-secondary:hover {
+    background-color: #9A82B0;
+    border-color: #9A82B0;
+    color: white;
+}
+.card-header {
+    background-color: #FF4F6F;
+    color: white;
+}
+.quantity-input {
+    max-width: 60px;
+}
+
