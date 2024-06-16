@@ -116,8 +116,8 @@
 
 .carousel-card {
   background-color: var(--pink-color);
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
   position: absolute;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -126,12 +126,16 @@
 }
 
 .carousel-img {
-  width: 350px;
-  height: 500px;
+  width: 300px;
+  height: 450px;
 }
 
 .btn-primary {
   border-radius: 20em;
+  transition: transform 0.4s ease;
+}
+.btn-primary:hover{
+    transform: scale(1.1);
 }
 
 .info-card {
@@ -143,8 +147,11 @@
   justify-content: center;
   padding: 20px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-
+  transition: transform 0.4s ease;
   font-size: 36px;
+}
+.info-card:hover{
+    transform: scale(1.1);
 }
 
 /* info cards */
