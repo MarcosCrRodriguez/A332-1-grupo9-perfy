@@ -132,10 +132,14 @@
 
 .btn-primary {
   border-radius: 20em;
+  background-color: #886aa5;
+  border-color: #886aa5;
   transition: transform 0.4s ease;
 }
 .btn-primary:hover{
     transform: scale(1.1);
+    background-color: #886aa5;
+    
 }
 
 .info-card {
@@ -214,7 +218,9 @@
     hsl(242deg 31% 45%) 100%
   );
 }
-
+.wave-2{
+    align-self: baseline;
+}
 /* @keyframes move_wave {
   0% {
     background-position: 0;
@@ -229,3 +235,4 @@
   background-repeat: repeat-x;
   animation: move_wave 5s linear infinite;
 } */
+
