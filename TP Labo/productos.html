@@ -3,190 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Mercado Gamer</title>   
-    <script src="https://kit.fontawesome.com/bbe53e2826.js" crossorigin="anonymous"></script> 
-    <link rel="icon" href="img/logofavicon.ico">
-    <script>
-        function toggleDescripcion(id) {
-            var descripcion = document.getElementById(id);
-            if (descripcion.style.display === "none") {
-                descripcion.style.display = "block";
-            } else {
-                descripcion.style.display = "none";
-            }
-        }
-    </script>
+    <title>SHOP - Perfy</title>  
+    <link rel="stylesheet" href="styles-shop.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div style=" display: flex; justify-content: space-between; align-items: center; padding: 10px;">
-            <div>
-                <h1 style="margin: 0;">Mercado Gamer</h1> 
-                <!-- <img src="./img/logo2.png" alt="logo" width="50px"; height="auto";> -->
+        <!-- Aquí puedes poner el contenido del header -->
+        <nav class="navbar bg-body-tertiary nav-extra">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="https://th.bing.com/th/id/OIP.p4pFTh4XQXMPWttcsvmRhwHaHa?w=200&h=200&c=7&r=0&o=5&pid=1.7" alt="Bootstrap" width="30" height="24">
+                Perfy
+              </a>
             </div>
-            <nav style="display: flex;">
-                <a href="index.html" style="margin-left: 20px; font-size: 20px; color: #333;">Home</a>
-                <a href="productos.html" style="margin-left: 20px; font-size: 20px; color: #333;">Productos</a>
-                <a href="nosotros.html" style="margin-left: 20px; font-size: 20px; color: #333;">Acerca De</a>
-                <a href="contacto.html" style="margin-left: 20px; font-size: 20px; color: #333;">Contacto</a>
-            </nav>
+          </nav>
+    </header>
+    <div class="container-a">
+        <div class="main-container">
+            <div class="left-column">
+                <div class="container-left">
+                    <!-- Esta área mantiene el color amarillo -->
+                    <div class="form-floating mb-3">
+                        <label>BUSCAR</label>
+                        <input class="form-control" placeholder="Buscar">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label>ORDENAR POR</label>
+                        <input class="form-control" placeholder="Orden">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label>PRECIO</label>
+                    </div>
+                    <div class="row precio-cont">
+                        <div class="col-5">
+                            <label>Min</label>
+                            <input class="form-control" placeholder="Min">
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-5">
+                            <label>Max</label>
+                            <input class="form-control" placeholder="Max">
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <hr>
+                    <label>FILTRAR</label>
+                    <div class="row">
+                        <div class="btn-group chk-option" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                            <label for="btncheck1" class="fancy-checkbox"></label>
+                            <label for="btncheck1" class="checkbox-label">Datos 1</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn-group chk-option" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                            <label for="btncheck2" class="fancy-checkbox"></label>
+                            <label for="btncheck2" class="checkbox-label">Datos 2</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn-group chk-option" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                            <label for="btncheck3" class="fancy-checkbox"></label>
+                            <label for="btncheck3" class="checkbox-label">Datos 3</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn-group chk-option" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                            <label for="btncheck4" class="fancy-checkbox"></label>
+                            <label for="btncheck4" class="checkbox-label">Datos 4</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <main class="content">
+                    <!-- Tarjetas o cualquier contenido -->
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjetas o cualquier contenido -->
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjetas o cualquier contenido -->
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjetas o cualquier contenido -->
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card card-styles">
+                            <img src="https://th.bing.com/th/id/OIP.rJ4fyEfIUG4TTSaIoRqseQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agrega más contenido según sea necesario -->
+                </main>
+            </div>
         </div>
-    </header> 
-    <hr>
-    <main>
-        <section>
-            <h1>Productos</h1>
-            <table align="center" cellspacing="20">
-                <tr>
-                    <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/3276/3276_1_1659520030.jpg" alt="Producto 1" width="200" height="150">
-                        <h2>Computadora A6 - 1TB - 4GB - Gabinete Kit - Monitor 20</h2>
-                        <p id="descripcion1" style="display: none;">PROCESADOR AMD FM2+
-                            MOTHER FM2+ MSI/ASROCK
-                            MEMORIA 4GB DDR3 Kingston/Markvision/Corsair/Adata/Crucial
-                            DISCO 1TB SATA III Wd/Seagate/Hitachi/Samsung
-                            GABINETE Kit Jalatek/Kanji/Sentey
-                            MONITOR 20"
-                        </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion1')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
-                        <p>Precio: $416.573</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
-                    </td>
-                    <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_602179-MLA74327313759_012024-F.webp" alt="Producto 2" width="200" height="150">
-                        <h2>Pc De Oficina Intel I3-12100 8gb Ram 256gb Ssd + Kit</h2>
-                            <p id="descripcion2" style="display: none;">PROCESADOR INTEL CORE I3 12100 LGA 1700
-                                MOTHER ASUS PRIME H610M-K D4
-                                MEMORIA RAM PATRIOT 8GB DDR4-3200 PC
-                                DISCO SSD PATRIOT P300 256GB M.2 PCI-E
-                                NSX GABINETE OFFICE M06 SLIM + FUENTE
-                                .KIT TECLADO Y MOUSE WIRELESS KY810
-                                !!NO INCLUYE MONITOR!!</p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion2')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                         </form>
-                        <p>Precio: $549.999</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
-                    </td>
-                    <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_808247-MLA51604619711_092022-F.webp" alt="Producto 3" width="200" height="150">
-                        <h2>Pc Armada + Monitor 24 Ssd 480 Ram 16 + Kit W10p</h2>
-                        <p id="descripcion3" style="display: none;">
-                            CPU armado e instalado con Windows 10 pro 64 bits + programas + juegos, teclado, mouse ,Pantalla
-                        </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion3')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
-                        <p>Precio: $1.538.944</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/2798/2798_1_1659520420.jpg" alt="Producto 1" width="200" height="150">
-                        <h2>Pc Armada Ryzen 3 - 8GB - SSD 120GB - HDD 1TB - Gabinete Kit</h2>
-                        <p id="descripcion4" style="display: none;">
-                            PROCESADOR Ryzen 3
-                            MOTHER A320 MSI/ASROCK/ASUS/GIGABYTE
-                            MEMORIA 8GB DDR4 Kingston/Markvision/Corsair/Adata/Crucial
-                            DISCO 120 SSD Kingston/WD/Markvisiton/Gigabyte/Hp/Adata
-                            DISCO 1TB SATA III Wd/Seagate/Hitachi/Samsung
-                            GABINETE Kit Jalatek/Kanji/Sentey
-                        </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion4')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
-                        <p>Precio: $403.220</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
-                    </td>
-                    <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/8244/8244_1_1673005559.jpg" alt="Producto 2" width="200" height="150">
-                        <h2>Pc Armada I5F - 16GB RGB - 250SSD - 600W 80 plus - Rtx 2060 6GB - Gabinete Gamer CR1280 RGB Riotoro</h2>
-                        <p id="descripcion5" style="display: none;">
-                            Procesador: I5 10400maF
-                            Mother: Mother H510H6-M2 Durathon2 1200 ECS 2
-                            Memoria Ram: 2 x RGB 8GB PNG
-                            Almacenamiento: 250 NVMe name p2 Crucial
-                            Gabinete: Gabinete Gamer CR1280 RGB Panel templado Riotoro
-                            Placa video Rtx2060 OC 6GB
-                            Fuente 600w jalatec 80 plus
-                        </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion5')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
-                        <p>Precio: $1.246.995</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
-                    </td>
-                    <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_639792-MLA70865741639_082023-F.webp" alt="Producto 3" width="200" height="150">
-                        <h2>Pc Armada De Oficina Nsx R7 5700g 8gb Ram 240gb Ssd + Kit</h2>
-                        <p id="descripcion6" style="display: none;">PROCESADOR AMD RYZEN 7 5700G AM4
-                            MOTHER ASUS PRIME A520M-K AM4
-                            MEMORIA RAM PATRIOT 8GB DDR4-3200 PC
-                            DISCO SSD LEXAR NM620 256GB M.2 NVME
-                            NSX GABINETE OFFICE SERIES C31 + FUENTE
-                            .SERVICIO ENSAMBLE DE MAQUINA
-                            .KIT TECLADO Y MOUSE WIRELESS KY810
-                            AURICULAR QBOX OFICINA H003
-                            SISTEMA OPERATIVO LICENCIA WINDOWS 11 (30 DIAS)
-                            
-                            !!NO INCLUYE MONITOR!!
-                        </p>
-                        <form onsubmit="return false;">
-                            <span style="background-color: #6c757d; padding: 5px; border-radius: 5px;">
-                                <b><u><button onclick="toggleDescripcion('descripcion6')" style="border: none; background: none; color: white; cursor: pointer; font-size: 12px;">Mostrar Descripción</button></u></b>
-                            </span>
-                        </form>
-                        <p>Precio: $689.999</p>
-                        <span style="background-color: #4CAF50; padding: 10px; border-radius: 5px;">
-                            <b><u><button style="border: none; background: none; color: white; cursor: pointer;">Agregar al Carrito</button></u></b>
-                        </span>
-                    </td>
-                </tr>
-            </table>
-        </section>
-         <div style="position: fixed; top: 20px; right: 20px;">
-        <a href="carrito.html">
-            <button style="background-color: #007bff; color: white; padding: 10px; border: none; border-radius: 5px;">
-                <img src="https://th.bing.com/th/id/R.d01f6a524827d080143ba7b6a4fd2961?rik=csLHhRB6q%2f4LMg&pid=ImgRaw&r=0" alt="Carrito" width="20" height="20" style="vertical-align: middle;">
-                Ir al Carrito
-            </button>
-        </a>
-         </div>
-    </main>
-    <footer style="text-align:center;background-color:steelblue">
-        <p>Redes Sociales</p>
-        <p>
-            <a href="https://www.youtube.com" target ="_blank"><i class="fa-brands fa-youtube" style="color: #000000"></i></a> 
-        
-            <a href="https://www.instagram.com" target ="_blank"><i class="fa-brands fa-instagram" style="color: #000000"></i></a> 
-    
-            <a href="https://www.facebook.com" target ="_blank"><i class="fa-brands fa-facebook" style="color: #000000"></i></a> 
-        
-            <a href="https://www.WhatsApp.com" target ="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000"></i></a>                 
-        </p>        
+    </div>
+    <footer style="display: flex; align-items: center; justify-content: center;">
+        <p>Footer :D</p>     
     </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
