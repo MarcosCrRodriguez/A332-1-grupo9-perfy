@@ -55,7 +55,7 @@ header{
     height: 300px;    
     margin-top: auto;
 }
-.navbar{
+.navbar-background{
     background-color: var(--colorFondoNav);    
 }
 .navbar-toggler{   
