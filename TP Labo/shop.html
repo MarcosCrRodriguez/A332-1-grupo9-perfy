@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Productos - Mercado Gamer</title>
-    <script src="https://kit.fontawesome.com/bbe53e2826.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/logofavicon.ico">
-    <style>
-       
-     table {
-        max-width: 940px; 
-        width: 100%;
-        border-collapse: collapse;
-        margin: 0 auto; 
-        }
-
-        td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .btn-carrito {
-            background-color: #c0392b;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
-=======
     <title>SHOP - Perfy</title>  
     <link rel="stylesheet" href="styles-shop.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
->>>>>>> 8dd1c1b (shop)
 </head>
-
 <body>
     <header>
-<<<<<<< HEAD
-        <div style=" display: flex; justify-content: space-between; align-items: center; padding: 10px;">
-            <div>
-                <h1 style="margin: 0;">Mercado Gamer</h1>
-                <!-- <img src="./img/logo2.png" alt="logo" width="50px"; height="auto";> -->
-=======
         <!-- Aquí puedes poner el contenido del header -->
-        <nav class="navbar bg-body-tertiary nav-extra">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="https://th.bing.com/th/id/OIP.p4pFTh4XQXMPWttcsvmRhwHaHa?w=200&h=200&c=7&r=0&o=5&pid=1.7" alt="Bootstrap" width="30" height="24">
-                Perfy
-              </a>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid" id="navBar">
+               <div>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                   aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                   <span>
+                     <img src="img/iconoMenu.png" alt="menu" id="iconoMenu">
+                   </span>
+                 </button>
+               </div>
+               <div class="col-10" id="navMed">
+                 <a href="index.html"><img src="img/perfyLight.png" alt="perfy"></a>
+               </div>
+               <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                 <ul class="navbar-nav raleway-font" id="ulNavBar">
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle text-white" href="shop.html" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                       Shop
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">1</a></li>
+                       <li><a class="dropdown-item" href="#">2</a></li>
+                       <li><a class="dropdown-item" href="#">3</a></li>
+                     </ul>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link text-white" href="login.html">Login</a>
+                   </li>
+                   <span>
+                     <a href="carrito.html"><img src="img/carrito.png" alt="carrito" id="carrito"></a>
+                   </span>
+                 </ul>
+               </div>
             </div>
-          </nav>
+         </nav>
     </header>
     <div class="container-a">
         <div class="main-container">
@@ -242,116 +237,79 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Agrega más contenido según sea necesario -->
                 </main>
->>>>>>> 8dd1c1b (shop)
+                <div class="row">
+                    <div class="col-9 buttons-page">
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><<</button>
+                            </div>
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-primary button-opt">1</button>
+                                <button type="button" class="btn btn-primary button-opt">2</button>
+                                <button type="button" class="btn btn-primary button-opt">3</button>
+                                <button type="button" class="btn btn-primary button-opt">4</button>
+                            </div>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary">>></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-<<<<<<< HEAD
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h1>Productos</h1>
-            <table align="center" cellspacing="20">
-                <tr>
-                    <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/3276/3276_1_1659520030.jpg"
-                            alt="Producto 1" width="200" height="150">
-                        <h2>Computadora A6 - 1TB - 4GB - Gabinete Kit - Monitor 20</h2>
-                        <p>Computadora armada e instalada con procesador AMD FM2+, mother FM2+ MSI/ASROCK, memoria 4GB DDR3 Kingston/Markvision/Corsair/Adata/Crucial, disco 1TB SATA III Wd/Seagate/Hitachi/Samsung, gabinete Kit Jalatek/Kanji/Sentey y monitor 20"
-                        </p>
-                        <p>Precio: $416.573</p>
-                        <button class="btn-carrito">Agregar al Carrito</button>
-                    </td>
-                    <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_602179-MLA74327313759_012024-F.webp"
-                            alt="Producto 2" width="200" height="150">
-                        <h2>Pc De Oficina Intel I3-12100 8gb Ram 256gb Ssd + Kit</h2>
-                        <p>Pc de oficina armada e instalada con procesador Intel Core i3 12100, mother Asus Prime H610M-K D4, memoria RAM Patriot 8GB DDR4-3200, disco SSD Patriot P300 256GB M.2 PCI-E, gabinete NSX Office M06 Slim con fuente, kit teclado y mouse wireless KY810. No incluye monitor</p>
-                        <p>Precio: $549.999</p>
-                        <button class="btn-carrito">Agregar al Carrito</button>
-                    </td>
-                    <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_808247-MLA51604619711_092022-F.webp"
-                            alt="Producto 3" width="200" height="150">
-                        <h2>Pc Armada + Monitor 24 Ssd 480 Ram 16 + Kit W10p</h2>
-                        <p>
-                            CPU armado e instalado con Windows 10 pro 64 bits + programas + juegos, teclado, mouse
-                            ,Pantalla
-                        </p>
-                        <p>Precio: $1.538.944</p>
-                        <button class="btn-carrito">Agregar al Carrito</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/2798/2798_1_1659520420.jpg"
-                            alt="Producto 1" width="200" height="150">
-                        <h2>Pc Armada Ryzen 3 - 8GB - SSD 120GB - HDD 1TB - Gabinete Kit</h2>
-                        <p>
-                            PC armada e instalada con procesador Ryzen 3, mother A320 MSI/ASROCK/ASUS/GIGABYTE, memoria 8GB DDR4 Kingston/Markvision/Corsair/Adata/Crucial, disco SSD 120GB Kingston/WD/Markvisiton/Gigabyte/Hp/Adata, disco 1TB SATA III Wd/Seagate/Hitachi/Samsung y gabinete Kit Jalatek/Kanji/Sentey.
-                        </p>
-                        <p>Precio: $403.220</p>
-                        <button class="btn-carrito">Agregar al Carrito</button>
-                    </td>
-                    <td width="250">
-                        <img src="https://sistema.langtecnologia.com.ar/img/elang/8244/8244_1_1673005559.jpg"
-                            alt="Producto 2" width="200" height="150">
-                        <h2>Pc Armada I5F - 16GB RGB - 250SSD - 600W 80 plus - Rtx 2060 6GB - Gabinete Gamer CR1280 RGB
-                            Riotoro</h2>
-                        <p>
-                            PC gamer armada e instalada con procesador I5 10400F, mother H510H6-M2 Durathon2 1200 ECS 2, memoria RAM 2x8GB RGB PNG, almacenamiento SSD NVMe 250GB Crucial p2, gabinete gamer Riotoro CR1280 RGB con panel templado, placa de video Rtx 2060 OC 6GB y fuente 600W Jalatec 80 Plus.
-                        </p>
-                        <p>Precio: $1.246.995</p>
-                        <button class="btn-carrito">Agregar al Carrito</button>
-                    </td>
-                    <td width="250">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_639792-MLA70865741639_082023-F.webp"
-                            alt="Producto 3" width="200" height="150">
-                        <h2>Pc Armada De Oficina Nsx R7 5700g 8gb Ram 240gb Ssd + Kit</h2>
-                        <p>PC de oficina armada e instalada con procesador AMD Ryzen 7 5700G AM4, mother Asus Prime A520M-K AM4, memoria RAM Patriot 8GB DDR4-3200, disco SSD Lexar NM620 256GB M.2 NVMe, gabinete NSX Office Series C31 con fuente, servicio de ensamble de máquina, kit teclado y mouse wireless KY810, auricular QBox Oficina H003 y sistema operativo con licencia Windows 11 (30 días). No incluye monitor.
-                        </p>
-
-                        <p>Precio: $689.999</p>
-                        <button class="btn-carrito">Agregar al Carrito</button>
-
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <div style="position: fixed; top: 85px; right: 20px;">
-            <a href="carrito.html">
-                <button class="btn-carrito">
-                    <img src="https://th.bing.com/th/id/R.d01f6a524827d080143ba7b6a4fd2961?rik=csLHhRB6q%2f4LMg&pid=ImgRaw&r=0"
-                        alt="Carrito" width="20" height="20" style="vertical-align: middle;">
-                    Ir al Carrito
-                </button>
-            </a>
-        </div>
-    </main>
-    <footer style="text-align:center;background-color:steelblue">
-        <p>Redes Sociales</p>
-        <p>
-            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"
-                    style="color: #000000"></i></a>
-
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"
-                    style="color: #000000"></i></a>
-
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"
-                    style="color: #000000"></i></a>
-
-            <a href="https://www.WhatsApp.com" target="_blank"><i class="fa-brands fa-whatsapp"
-                    style="color: #000000"></i></a>
-        </p>
-=======
     </div>
-    <footer style="display: flex; align-items: center; justify-content: center;">
-        <p>Footer :D</p>     
->>>>>>> 8dd1c1b (shop)
-    </footer>
+    <footer class="item" id="footer">
+        <div class="container text-center text-md-left" >        
+          <div class="row text-center text-md-left" id="footerDiv">
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 pt-5" id="menuFooter">            
+              <ul class="list-unstyled text-start raleway-font">
+                <li class="text-white">
+                  <a href="" class="text-reset text-decoration-none">SHOP</a>
+                </li>
+                <li class="text-white">
+                  <a href="" class="text-reset text-decoration-none">INGRESAR</a>
+                </li>
+                <li class="text-white">
+                  <a href="" class="text-reset text-decoration-none">CONTACTO</a>
+                </li>             
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mnt-3" id="logoFooter">            
+              <div>
+                <img src="img/perfyLight.png" alt="perfy" id="logoFooter">
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-4" id="redesFooter">           
+              <div class="text-center text-md-right pt-5">
+                <ul class="list-unstyled list-inline">
+                  <li>
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-tiktok"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>                
+                  <li>                  
+                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>        
+            <hr class="mb-4">
+            <div class="row align-items-center" id="copyright">
+              <div class="pt-4">
+                <p class="text-white" >Maquetado. All rights reserved 2024 - 
+                  <a href="#" style="text-decoration: none;">
+                    <strong class="text-warning">perfy</strong>
+                  </a>
+                </p>
+  
+              </div>
+            </div>       
+        </div>
+      </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

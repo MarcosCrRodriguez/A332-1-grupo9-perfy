@@ -91,6 +91,7 @@ input[type="checkbox"] {
     flex: 1; /* Resto del espacio */
     background-color: white;
     font-family: 'Caveat', cursive;
+    margin-bottom: 80px;
 }
 
 .content {
@@ -106,6 +107,17 @@ input[type="checkbox"] {
 
 .card-container {
     margin: 8px;
+}
+
+.buttons-page {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-opt {
+    margin: 15px;
 }
 
 footer {
