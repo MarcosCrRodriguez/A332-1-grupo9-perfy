@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/bbe53e2826.js" crossorigin="anonymous"></script> 
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./styleIndex.css">
 </head>
@@ -58,7 +59,7 @@
   </header>
   <!-- Banner colores -->
   <div class="w-100">
-    <div class="row justify-content-center align-items-center mr-0">
+    <div class="row justify-content-center align-items-center mx-0">
       <div class="col-md-6">
         <div class="p-3 ml-5">
           <h1 class="text-white my-4">Descubrí la bebida del verano</h1>
@@ -77,7 +78,7 @@
     </div>
   </div>
 
-  <!-- WaveAmarilla -->
+  <!-- Wave amarilla -->
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -140,17 +141,18 @@
         </div>
       </div>
     </div>
-    <!-- WaveCeleste -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-2" style="align-self: baseline;">
+
+    <!-- Wave celeste -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#9ed8db" fill-opacity="1"
         d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,160C672,128,768,96,864,96C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        data-darkreader-inline-fill="" style="--darkreader-inline-fill: #80003a"></path>
+        ></path>
     </svg>
   </div>
 
   <!-- InfoCards -->
 
-  <div style="background-color: #9ed8db">
+  <div class="info-cards-container">
     <div class="container">
       <div class="row justify-content-center align-items-center g-2">
         <div class="col">
@@ -169,67 +171,62 @@
   </div>
 
   <footer class="item" id="footerAlt">
-    <div class="container text-center text-md-left">
 
-        <div class="row text-center text-md-left" id="footerDiv">
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 pt-5" id="menuFooter">
-                <ul class="list-unstyled text-start raleway-font">
-                    <li class="text-white">
-                        <a href="" class="text-reset text-decoration-none">SHOP</a>
-                    </li>
-                    <li class="text-white">
-                        <a href="login.html" class="text-reset text-decoration-none">INGRESAR</a>
-                    </li>
-                    <li class="text-white">
-                        <a href="contacto.html" class="text-reset text-decoration-none">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mnt-3" id="logoFooter">
-                <div>
-                    <img src="img/perfyLight.png" alt="perfy" id="logoFooter">
-                </div>
-            </div>
-
-            <div class="col-md-5 col-lg-4" id="redesFooter">
-                <div class="text-center text-md-right pt-5">
-                    <ul class="list-unstyled list-inline">
-                        <li>
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                    class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                    class="fab fa-tiktok"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                    class="fab fa-youtube"></i></a>
-                        <li>
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                    class="fab fa-facebook"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr class="mb-4">
-
-            <div class="row align-items-center" id="copyright">
-                <div class="pt-4">
-                    <p class="text-white">Maquetado. All rights reserved 2024 -
-                        <a href="#" style="text-decoration: none;">
-                            <strong class="text-warning">perfy</strong>
-                        </a>
-                    </p>
-
-                </div>
-            </div>
+    <div class="container-fluid" id="footerDiv">        
+      <div class="row text-center text-md-left" > 
+        
+        <div class="col-6 col-md-1 col-lg-2 col-xl-2 mx-auto mt-3 pt-5" id="menuFooter">            
+          <ul class="list-unstyled text-start raleway-font">
+            <li class="text-white">
+              <a href="shop.html" class="text-reset text-decoration-none">SHOP</a>
+            </li>
+            <li class="text-white">
+              <a href="login.html" class="text-reset text-decoration-none">INGRESAR</a>
+            </li>
+            <li class="text-white">
+              <a href="contacto.html" class="text-reset text-decoration-none">CONTACTO</a>
+            </li>             
+          </ul>
+        </div>
+        
+        <div class="col-md-10 col-lg-9 col-xl-9 mx-auto mt-3 d-none d-md-block" id="logoFooter">       
+          <div>
+            <img src="img/perfyLight.png" alt="perfy" id="logoFooter">
+          </div>
         </div>
 
-</footer>    
+        <!-- <div class="col-1 col-md-5 col-lg-4" id="redesFooter">            -->
+        <div class="col-6 col-md-1 col-lg-1 col-xl-1 mx-auto" id="redesFooter">           
+          <div class="text-center pt-4">
+            <ul class="list-unstyled list-inline" id="ulFooter">
+              <li>
+                <a href="#" class="btn-floating btn-sm text-white"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>                
+              <li>                  
+                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+    </div>
+      
+    <hr class="mb-4">
+
+    <div class="row align-items-center" id="copyright">
+    <div class="pt-4 text-center">
+        <p class="text-white" >Maquetado. All rights reserved 2024 - 
+        <a href="#" class="text-decoration-none">
+            <strong class="text-warning">perfy</strong>
+        </a>
+        </p>
+    </div>
+    </div> 
+</footer> 
   <script src="./script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
