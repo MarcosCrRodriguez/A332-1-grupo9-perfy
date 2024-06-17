@@ -55,6 +55,9 @@ header{
     height: 300px;    
     margin-top: auto;
 }
+#ulFooter{
+    font-size: 25px;
+}
 .navbar{
     background-color: var(--colorFondoNav);    
 }
@@ -66,6 +69,10 @@ header{
     width: 30px;
     height: 30px;
 }
+#iconoMenu:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
 #carrito{
     width: 35px;
     height: 35px;
@@ -75,32 +82,15 @@ header{
         display: none!important;
     }
 } */
-
+#footerDiv{
+    background-color: var(--colorFondoFooter);
+}
 @media (max-width: 1600px) {
     #navMed {        
         width: 66.67%;
     }  
 }
-@media (max-width: 800px) {   
-    #footerDiv{        
-        display: flex;
-        justify-items: flex-start;
-        
-    }
-    #logoFooter{
-        display: none;
-    } 
-    /* hr{
-        display: none;
-    } */
-    #redesFooter{
-        display: none;
-    }    
-    /* #copyright{
-        display: none;
-    } */
-   
-}
+
 @media (max-width: 600px) {
     .containerMain{
         grid-template: 1fr 1fr / 100%;
