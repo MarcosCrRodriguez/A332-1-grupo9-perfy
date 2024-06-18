@@ -15,7 +15,7 @@ body, html {
 .left-column {
     background-color: rgb(242, 242, 158);
     width: 16.666%; 
-    font-family: 'Caveat', cursive;
+    font-family: 'Raleway';
 }
 
 .container-left {
@@ -82,7 +82,7 @@ input[type="checkbox"] {
 .right-column {
     flex: 1; /* Resto del espacio */
     background-color: white;
-    font-family: 'Caveat', cursive;
+    font-family: 'Raleway';
     margin-bottom: 80px;
 }
 
