@@ -5,21 +5,6 @@
   font-style: normal;
   font-variation-settings: "XROT" 0, "YROT" 0;
 }
-/* body {
-    background-color: var(--yellow-color);
-} */
-
-/* :root {
-  --pink-color: #ff7fb9;
-  --orange-color: #ea7e61;
-  --yellow-color: #f9d968;
-  --light-blue-color: #9ed8db;
-  --purple-color: #525098;
-  --danger-color: #ff0066;
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
-  --lightie-color: #f8e6a0;
-} */
 
 :root {
   --pink-color: #ff4f6f;
@@ -46,37 +31,47 @@
   0% {
     background-position: 99% 0%;
   }
+
   50% {
     background-position: 2% 100%;
   }
-  100% {
-    background-position: 99% 0%;
-  }
-}
-@-moz-keyframes GradientAnimation {
-  0% {
-    background-position: 99% 0%;
-  }
-  50% {
-    background-position: 2% 100%;
-  }
-  100% {
-    background-position: 99% 0%;
-  }
-}
-@keyframes GradientAnimation {
-  0% {
-    background-position: 99% 0%;
-  }
-  50% {
-    background-position: 2% 100%;
-  }
+
   100% {
     background-position: 99% 0%;
   }
 }
 
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 99% 0%;
+  }
+
+  50% {
+    background-position: 2% 100%;
+  }
+
+  100% {
+    background-position: 99% 0%;
+  }
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 99% 0%;
+  }
+
+  50% {
+    background-position: 2% 100%;
+  }
+
+  100% {
+    background-position: 99% 0%;
+  }
+}
+
+
 /* main image */
+
 .hero-image {
   animation: rotate 5s infinite;
   transform-style: preserve-3d;
@@ -86,15 +81,19 @@
   0% {
     transform: perspective(600px) rotateY(0deg);
   }
+
   50% {
     transform: perspective(600px) rotateY(-20deg);
   }
+
   100% {
     transform: perspective(600px) rotateY(0deg);
   }
 }
 
+
 /* carousel */
+
 .carousel-wave-container {
   background-color: var(--yellow-color);
 }
@@ -130,21 +129,17 @@
   height: 450px;
 }
 
-.btn-primary {
-  border-radius: 20em;
-  background-color: #886aa5;
-  border-color: #886aa5;
-  transition: transform 0.4s ease;
-}
-.btn-primary:hover{
-    transform: scale(1.1);
-    background-color: #886aa5;
-    
+
+/* info cards */
+
+.info-cards-container {
+  background-color: #9ed8db;
 }
 
 .info-card {
   color: white;
   height: 400px;
+  width: 400px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -153,86 +148,86 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
   font-size: 36px;
-}
-.info-card:hover{
-    transform: scale(1.1);
+  margin-bottom: 100px;
 }
 
-/* info cards */
+.info-card:hover {
+  transform: scale(1.1);
+}
+
 .card-1 {
-  background-image: linear-gradient(
-    25deg,
-    hsl(333deg 100% 75%) 0%,
-    hsl(340deg 94% 73%) 9%,
-    hsl(347deg 90% 71%) 18%,
-    hsl(355deg 85% 69%) 27%,
-    hsl(2deg 82% 68%) 36%,
-    hsl(9deg 78% 66%) 45%,
-    hsl(16deg 78% 65%) 55%,
-    hsl(22deg 80% 66%) 64%,
-    hsl(28deg 83% 67%) 73%,
-    hsl(34deg 86% 68%) 82%,
-    hsl(41deg 89% 68%) 91%,
-    hsl(47deg 92% 69%) 100%
-  );
+  background-image: linear-gradient(25deg,
+      hsl(333deg 100% 75%) 0%,
+      hsl(340deg 94% 73%) 9%,
+      hsl(347deg 90% 71%) 18%,
+      hsl(355deg 85% 69%) 27%,
+      hsl(2deg 82% 68%) 36%,
+      hsl(9deg 78% 66%) 45%,
+      hsl(16deg 78% 65%) 55%,
+      hsl(22deg 80% 66%) 64%,
+      hsl(28deg 83% 67%) 73%,
+      hsl(34deg 86% 68%) 82%,
+      hsl(41deg 89% 68%) 91%,
+      hsl(47deg 92% 69%) 100%);
 }
 
 .card-2 {
-  background-image: linear-gradient(
-    345deg,
-    hsl(333deg 100% 75%) 0%,
-    hsl(339deg 99% 77%) 4%,
-    hsl(346deg 98% 79%) 9%,
-    hsl(354deg 97% 80%) 13%,
-    hsl(3deg 96% 81%) 16%,
-    hsl(12deg 95% 80%) 20%,
-    hsl(20deg 94% 78%) 24%,
-    hsl(27deg 94% 77%) 28%,
-    hsl(33deg 93% 75%) 32%,
-    hsl(38deg 93% 73%) 36%,
-    hsl(43deg 93% 71%) 39%,
-    hsl(47deg 92% 69%) 43%,
-    hsl(48deg 83% 71%) 47%,
-    hsl(49deg 72% 72%) 51%,
-    hsl(52deg 60% 73%) 56%,
-    hsl(57deg 48% 74%) 60%,
-    hsl(65deg 39% 75%) 65%,
-    hsl(78deg 34% 77%) 69%,
-    hsl(100deg 28% 79%) 74%,
-    hsl(135deg 27% 79%) 80%,
-    hsl(159deg 33% 77%) 85%,
-    hsl(174deg 38% 75%) 92%,
-    hsl(183deg 46% 74%) 100%
-  );
+  background-image: linear-gradient(345deg,
+      hsl(333deg 100% 75%) 0%,
+      hsl(339deg 99% 77%) 4%,
+      hsl(346deg 98% 79%) 9%,
+      hsl(354deg 97% 80%) 13%,
+      hsl(3deg 96% 81%) 16%,
+      hsl(12deg 95% 80%) 20%,
+      hsl(20deg 94% 78%) 24%,
+      hsl(27deg 94% 77%) 28%,
+      hsl(33deg 93% 75%) 32%,
+      hsl(38deg 93% 73%) 36%,
+      hsl(43deg 93% 71%) 39%,
+      hsl(47deg 92% 69%) 43%,
+      hsl(48deg 83% 71%) 47%,
+      hsl(49deg 72% 72%) 51%,
+      hsl(52deg 60% 73%) 56%,
+      hsl(57deg 48% 74%) 60%,
+      hsl(65deg 39% 75%) 65%,
+      hsl(78deg 34% 77%) 69%,
+      hsl(100deg 28% 79%) 74%,
+      hsl(135deg 27% 79%) 80%,
+      hsl(159deg 33% 77%) 85%,
+      hsl(174deg 38% 75%) 92%,
+      hsl(183deg 46% 74%) 100%);
 }
 
 .card-3 {
-  background-image: linear-gradient(
-    340deg,
-    hsl(13deg 77% 65%) 0%,
-    hsl(351deg 64% 62%) 14%,
-    hsl(329deg 54% 59%) 28%,
-    hsl(307deg 45% 56%) 55%,
-    hsl(285deg 38% 52%) 77%,
-    hsl(264deg 33% 49%) 89%,
-    hsl(242deg 31% 45%) 100%
-  );
-}
-.wave-2{
-    align-self: baseline;
-}
-/* @keyframes move_wave {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: -100%;
-  }
+  background-image: linear-gradient(340deg,
+      hsl(13deg 77% 65%) 0%,
+      hsl(351deg 64% 62%) 14%,
+      hsl(329deg 54% 59%) 28%,
+      hsl(307deg 45% 56%) 55%,
+      hsl(285deg 38% 52%) 77%,
+      hsl(264deg 33% 49%) 89%,
+      hsl(242deg 31% 45%) 100%);
 }
 
-.wave-container {
-  background-image: url('./img/wave-2.svg');
-  background-repeat: repeat-x;
-  animation: move_wave 5s linear infinite;
-} */
 
+/* others */
+
+.btn-primary {
+  border-radius: 20em;
+  background-color: #886aa5;
+  border-color: #886aa5;
+  transition: transform 0.4s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+  background-color: #886aa5;
+}
+
+#footerAlt {
+  width: 100%;
+  background-color: var(--light-blue-color);
+  display: flex;
+  height: 300px;
+  margin-top: auto;
+}
