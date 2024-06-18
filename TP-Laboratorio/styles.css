@@ -58,8 +58,8 @@ header {
 #footer{
     width: 100%;   
     background-color: var(--colorFondoFooter);     
-    display: flex;
-    height: 300px;    
+    /*display: flex;
+    height: 300px;     */
     margin-top: auto;
 }
 #ulFooter{
@@ -69,7 +69,9 @@ header {
 .navbar-background {
     background-color: var(--colorFondoNav);
 }
-
+/* .navbar{
+    background-color: var(--colorFondoNav);        
+} */
 .navbar-toggler {
     border: none;
     color: transparent;
@@ -78,6 +80,10 @@ header {
 #iconoMenu {
     width: 30px;
     height: 30px;
+}
+#iconoMenu:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
 }
 
 #carrito {
@@ -90,14 +96,16 @@ header {
         display: none!important;
     }
 } */
-
+/* #footerDiv{
+    background-color: var(--colorFondoFooter);
+} */
 @media (max-width: 1600px) {
     #navMed {
         width: 66.67%;
     }
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     #footerDiv {
         display: flex;
         justify-items: flex-start;
@@ -108,18 +116,13 @@ header {
         display: none;
     }
 
-    /* hr{
-        display: none;
-    } */
     #redesFooter {
         display: none;
     }
 
-    /* #copyright{
-        display: none;
-    } */
 
-}
+
+} */
 
 @media (max-width: 600px) {
     .containerMain {

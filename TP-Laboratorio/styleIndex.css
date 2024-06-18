@@ -227,7 +227,6 @@
 #footerAlt {
   width: 100%;
   background-color: var(--light-blue-color);
-  display: flex;
-  height: 300px;
   margin-top: auto;
 }
+
