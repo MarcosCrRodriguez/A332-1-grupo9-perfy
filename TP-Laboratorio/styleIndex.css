@@ -72,9 +72,16 @@
 
 /* main image */
 
-.hero-image {
+.cans-image {
   animation: rotate 5s infinite;
   transform-style: preserve-3d;
+}
+
+@media (max-width: 1050px) {
+  .cans-image {
+      width: 70%;
+      height: 70%;
+  }
 }
 
 @keyframes rotate {
@@ -115,20 +122,31 @@
 
 .carousel-card {
   background-color: var(--pink-color);
-  width: 600px;
-  height: 600px;
+  width: 50%;
+  /* height: 70%; */
   position: absolute;
   transition: all 0.5s ease;
   cursor: pointer;
   opacity: 0;
   border-radius: 5%;
 }
-
-.carousel-img {
-  width: 300px;
-  height: 450px;
+@media (min-width: 1050px) {
+  .carousel-card {
+      width: 500px;
+      height: 500px;
+  }
 }
 
+.carousel-img {
+  width: 100%;
+  /* height: 450px; */
+}
+@media (min-width: 1050px) {
+  .carousel-img {
+    width: 300px;
+    height: 450px;
+  }
+}
 
 /* info cards */
 
