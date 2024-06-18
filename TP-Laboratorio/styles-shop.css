@@ -30,6 +30,10 @@ body, html {
     margin-top: -15px;
 }
 
+.lbl-col {
+    font-size: 26px;
+}
+
 .chk-option {
     margin-left: 25px;
 }
@@ -88,15 +92,13 @@ input[type="checkbox"] {
 
 .content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     padding-top: 30px;
     padding-left: 80px;
 }
 
 .card {
-    border: 0px!important; /* No me toma el estilo */
+    border: 0px!important; /* No me toma el estilo */    
 }
 
 .card-custom-img {
@@ -111,11 +113,12 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    size: 50%;
 }
 
 .card-container {
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 44px;
     margin-top: 30px;
 }
@@ -135,34 +138,33 @@ input[type="checkbox"] {
     margin: 15px;
 }
 
-@media (max-width: 768px) {
-    .container-left {
-        font-size: 16px;
-        margin-left: 4px;
-        margin-right: 4px;
-        margin-top: 25px;
-    }
-
-    .card-container {
-        margin-left: 90px;
-        margin-right: 80px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .precio-cont {
-        font-size: 12px;
-        margin-top: -5px;
-    }
-
-    .checkbox-label {
-        margin-left: 3px; 
-        cursor: pointer;
-        font-size: 12px;
-    }
-
-    .chk-option {
-        margin-left: 3px;
-    }
+.divMain{
+    display: grid;
+    grid-template: 100% / 240px 1fr;
+    grid-template-areas: "barra cartas";
+    height: 100%;
+    align-self: stretch;
 }
 
+.imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra {
+    grid-area: barra;   
+    background-color: rgb(242, 242, 158)
+}
+
+.cartas {
+    grid-area: cartas;
+}
+
+@media (max-width: 500px) {
+    .divMain {
+        grid-template: 550px 1fr / 100%;
+        grid-template-areas: "barra"
+            "cartas";
+    } 
+}
