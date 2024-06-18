@@ -3,6 +3,7 @@
     --colorFondoFooter: #AC97C0;
     --colorBotonEnviar: #AC97C0;
 }
+
 .containerMain {
     display: grid;
     grid-template: 100% / 1fr 1fr;
