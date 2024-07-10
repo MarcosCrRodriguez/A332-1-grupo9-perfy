@@ -159,16 +159,18 @@ header {
 
 
 .login-wrap {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #F8FA9E;
+    border-radius: 10px; /* Añade esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Añade una sombra sutil */
     margin-top: 3rem;
     margin-bottom: 3rem;
+
+    
 }
 
 .login-form .form-control {
-    background: #fff;
-    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
     border-radius: 5px;
     height: 48px;
     padding-left: 20px;
@@ -177,8 +179,9 @@ header {
 }
 
 .login-form .form-control:focus {
-    border-color: #AC97C0;
-    box-shadow: 0 0 0 0.2rem rgba(172, 151, 192, 0.25);
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    background-color: #F8FA9E; /* Mantiene el color de fondo al enfocar */
 }
 
 .login-form .btn-primary {
@@ -255,6 +258,22 @@ header {
 }
 
 
+
+/* Opcional: si desea cambiar el color del texto dentro de los campos */
+.login-form .form-control::placeholder {
+    color: #6c757d; /* Ajuste este color para que contraste bien con el fondo */
+}
+
+
+/* Ajustamos el color del texto para que contraste bien con el nuevo fondo */
+.login-wrap h3,
+.login-wrap label,
+.login-wrap a {
+    color: #333; /* Un gris oscuro para mejor legibilidad */
+}
+
+
+
 /* Estilos para el carrito */
 .btn-custom-primary {
     background-color: #AC97C0;
@@ -274,17 +293,38 @@ header {
     color: white;
 }
 
-.btn-custom-secondary:hover {
-    background-color: #9A82B0;
-    border-color: #9A82B0;
-    color: white;
+/* Estilos para el carrito */
+.card {
+    background-color: #F8FA9E;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .card-header {
     background-color: #FF4F6F;
     color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+/* Ajuste el color de texto para mejorar la legibilidad */
+.card-body {
+    color: #333;
+}
+
+/* Mantenga el fondo blanco para los inputs de cantidad */
 .quantity-input {
-    max-width: 60px;
+    background-color: #ffffff;
+}
+
+/* Ajuste el estilo de los botones si es necesario */
+.btn-custom-secondary {
+    background-color: #AC97C0;
+    border-color: #AC97C0;
+    color: white;
+}
+
+.btn-custom-secondary:hover {
+    background-color: #9A82B0;
+    border-color: #9A82B0;
 }
