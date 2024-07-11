@@ -1,0 +1,77 @@
+.title-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 0px;
+    background-color: #f8fa9e;
+    padding: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.accordion-button.custom-font-size {
+    font-size: 0.8em; 
+}
+
+.cont-block {
+    font-size: 20px;
+}
+
+.sides-col {
+    background-color: #f8fa9e;
+}
+
+.divMain {
+    display: grid;
+    grid-template: 100% / 350px 1fr 350px;
+    grid-template-areas: "barra-izquierda preguntas barra-derecha";
+    height: 125vh; 
+    align-self: stretch;
+}
+
+.barra-izquierda {
+    grid-area: barra-izquierda;   
+    background-color: rgb(242, 242, 158);
+}
+
+.cartas {
+    grid-area: cartas;
+    background-color: white; 
+}
+
+.barra-derecha {
+    grid-area: barra-derecha;   
+    background-color: rgb(242, 242, 158);
+}
+
+@media (max-width: 500px) {
+    .divMain {
+        height: 218vh; 
+        grid-template: auto / 1fr;
+        grid-template-areas: 
+            "barra-izquierda"
+            "preguntas"
+            "barra-derecha";
+    }
+
+    .barra-izquierda, .barra-derecha {
+        height: 100px;
+    }
+
+    .preguntas {
+        padding: 10px;
+    }
+
+    .title-page {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .accordion-button.custom-font-size {
+        font-size: 1em;
+    }
+}
