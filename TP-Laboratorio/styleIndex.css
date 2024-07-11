@@ -21,7 +21,8 @@
 .gradient-background {
   background: linear-gradient(184deg, #ea7e61, #ff7fb9);
   background-size: 400% 400%;
-
+  /* padding-left: 5%;
+  padding-right: 5%; */
   -webkit-animation: GradientAnimation 4s ease infinite;
   -moz-animation: GradientAnimation 4s ease infinite;
   animation: GradientAnimation 4s ease infinite;
