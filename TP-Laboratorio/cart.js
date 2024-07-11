@@ -110,7 +110,49 @@ function updateSummary(total) {
 
 function updateCartStorage() {
     localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartDisplay();
 }
+
+function addToCart(productName, price) {
+    const existingItem = cart.find(item => item.name === productName);
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        cart.push({ name: productName, price: price, quantity: 1 });
+    }
+    updateCartStorage();
+    updateCartDisplay();
+    showToastMessage(`${productName} agregado al carrito`);
+}
+
+function updateCartDisplay() {
+    const cartCounters = document.querySelectorAll('.cart-counter');
+    const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
+    
+    cartCounters.forEach(counter => {
+        counter.textContent = itemCount;
+        counter.style.display = itemCount > 0 ? 'inline' : 'none';
+    });
+}
+
+function showToastMessage(message) {
+    const toast = document.getElementById('toast-message');
+    if (toast) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartDisplay();
+    if (window.location.pathname.includes('carrito.html')) {
+        renderCart();
+    }
+});
+
 
 // Inicializar la visualización del carrito
 renderCart();

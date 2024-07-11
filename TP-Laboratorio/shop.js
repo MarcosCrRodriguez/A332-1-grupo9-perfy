@@ -10,6 +10,15 @@ function addToCart(productName, price) {
     }
     updateCartStorage();
     updateCartDisplay();
+    showToastMessage();
+}
+
+function showToastMessage() {
+    const toast = document.getElementById('toast-message');
+    toast.classList.add('show');
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000); // El mensaje desaparece después de 3 segundos
 }
 
 function updateCartStorage() {
@@ -17,10 +26,22 @@ function updateCartStorage() {
 }
 
 function updateCartDisplay() {
-    const cartIcon = document.getElementById('carrito');
-    const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
-    cartIcon.setAttribute('data-count', itemCount);
+    const cartCounter = document.getElementById('cart-counter');
+    if (cartCounter) {
+        const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
+        cartCounter.textContent = itemCount;
+        
+        // Si quieres ocultar el contador cuando es cero:
+        if (itemCount === 0) {
+            cartCounter.style.display = 'none';
+        } else {
+            cartCounter.style.display = 'inline';
+        }
+    } else {
+        console.error("Elemento 'cart-counter' no encontrado");
+    }
 }
+
 
 
 document.querySelectorAll('.btn').forEach(button => {
@@ -32,5 +53,7 @@ document.querySelectorAll('.btn').forEach(button => {
     });
 });
 
-
-updateCartDisplay();
+// Actualiza el display cuando la página se carga
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartDisplay();
+});
