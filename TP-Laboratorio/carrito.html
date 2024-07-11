@@ -61,8 +61,8 @@
 
                 <div class="card mb-4">
                     <div class="card-header">
-                        <div class="row">
-                            <div class="col-md-6">DETALLE DE PRODUCTO</div>
+                        <div class="row d-none d-md-flex">
+                            <div class="col-md-6" id="cartItems">DETALLE DE PRODUCTO</div>
                             <div class="col-md-2 text-center">CANTIDAD</div>
                             <div class="col-md-3 text-end">TOTAL</div>
                         </div>
@@ -70,153 +70,98 @@
 
                     <div class="card-body">
                         <!-- Fruit Punch -->
-                        <div class="row align-items-center mb-3">
-                            <div class="col-md-2 col-4">
-                                <img src="img/perfy-FruitPunch.png" alt="Fruit Punch" class="img-fluid">
-                            </div>
-                            <div class="col-md-4 col-8">
-                                <h5>FRUIT PUNCH</h5>
-                                <p class="text-muted">Precio: $1,799.99</p>
-                            </div>
-                            <div class="col-md-3 col-6 mt-2">
-                                <div class="input-group">
-                                    <button class="btn btn-custom-secondary" type="button">-</button>
-                                    <input type="text" class="form-control text-center quantity-input" value="2">
-                                    <button class="btn btn-custom-secondary" type="button">+</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-4 mt-2 text-end">$3,599.98</div>
-                            <div class="col-md-1 col-2 mt-2 text-end">
-                                <button class="btn btn-light"><i class="bi bi-x-circle"></i>X</button>
-                            </div>
-                        </div>
+                        <!-- Van las cards -->
 
-                        <!-- Blood Orange Yuzu -->
-                        <div class="row align-items-center mb-3">
-                            <div class="col-md-2 col-4">
-                                <img src="img/perfy-BllodOrangeYuzu.png" alt="Blood Orange Yuzu" class="img-fluid">
-                            </div>
-                            <div class="col-md-4 col-8">
-                                <h5>BLOOD ORANGE YUZU</h5>
-                                <p class="text-muted">Precio: $1,799.99</p>
-                            </div>
-                            <div class="col-md-3 col-6 mt-2">
-                                <div class="input-group">
-                                    <button class="btn btn-custom-secondary" type="button">-</button>
-                                    <input type="text" class="form-control text-center quantity-input" value="1">
-                                    <button class="btn btn-custom-secondary" type="button">+</button>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-4 mt-2 text-end">$1,799.99</div>
-                            <div class="col-md-1 col-2 mt-2 text-end">
-                                <button class="btn btn-light"><i class="bi bi-x-circle"></i>X</button>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="container">
-                    <div class="row justify-content-end">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">RESUMEN</h5>
-                                    <div class="row mb-2">
-                                        <div class="col-8">CANTIDAD DE ELEMENTOS</div>
-                                        <div class="col-4 text-end">3</div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col-8">SUBTOTAL</div>
-                                        <div class="col-4 text-end">$5,399.97</div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col-8">ENVIO</div>
-                                        <div class="col-4 text-end">$0.00</div>
-                                    </div>
-                                    <div class="row fw-bold">
-                                        <div class="col-8">TOTAL</div>
-                                        <div class="col-4 text-end">$5,399.97</div>
-                                    </div>
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-md-6" id="cartSummary">
+                                <div id="cardContainer" class="card">
+                                    <div class="card-body">
+                                        <!-- Espacio para el resumen de cuenta-->
 
+                                    </div>
+                                </div>
+
+                                <div  id="checkoutButtonContainer" class="d-grid gap-2 mt-3 mb-5" >
+                                    <button  id="checkoutButton" class="btn btn-custom-primary " type="button">IR A PAGAR</button>
                                 </div>
                             </div>
-
-                            <div class="d-grid gap-2 mt-3 mb-5">
-                                <button class="btn btn-custom-primary" type="button">IR A PAGAR</button>
-                            </div>
                         </div>
+
+
                     </div>
 
 
+
+
                 </div>
-
-
-
-
-            </div>
 
 
         </section>
     </main>
     <footer class="item" id="footer">
 
-        <div class="container-fluid" id="footerDiv">        
-          <div class="row text-center text-md-left" > 
-            
-            <div class="col-6 col-md-1 col-lg-2 col-xl-2 mx-auto mt-3 pt-5" id="menuFooter">            
-              <ul class="list-unstyled text-start raleway-font">
-                <li class="text-white">
-                  <a href="shop.html" class="text-reset text-decoration-none">SHOP</a>
-                </li>
-                <li class="text-white">
-                  <a href="login.html" class="text-reset text-decoration-none">INGRESAR</a>
-                </li>
-                <li class="text-white">
-                  <a href="contacto.html" class="text-reset text-decoration-none">CONTACTO</a>
-                </li>             
-              </ul>
+        <div class="container-fluid" id="footerDiv">
+            <div class="row text-center text-md-left">
+
+                <div class="col-6 col-md-1 col-lg-2 col-xl-2 mx-auto mt-3 pt-5" id="menuFooter">
+                    <ul class="list-unstyled text-start raleway-font">
+                        <li class="text-white">
+                            <a href="shop.html" class="text-reset text-decoration-none">SHOP</a>
+                        </li>
+                        <li class="text-white">
+                            <a href="login.html" class="text-reset text-decoration-none">INGRESAR</a>
+                        </li>
+                        <li class="text-white">
+                            <a href="contacto.html" class="text-reset text-decoration-none">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-10 col-lg-9 col-xl-9 mx-auto mt-3 d-none d-md-block" id="logoFooter">
+                    <div>
+                        <img src="img/perfyLight.png" alt="perfy" id="logoFooter">
+                    </div>
+                </div>
+
+                <!-- <div class="col-1 col-md-5 col-lg-4" id="redesFooter">            -->
+                <div class="col-6 col-md-1 col-lg-1 col-xl-1 mx-auto" id="redesFooter">
+                    <div class="text-center pt-4">
+                        <ul class="list-unstyled list-inline" id="ulFooter">
+                            <li>
+                                <a href="#" class="btn-floating btn-sm text-white"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-tiktok"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>
+                            <li>
+                                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
-            <div class="col-md-10 col-lg-9 col-xl-9 mx-auto mt-3 d-none d-md-block" id="logoFooter">       
-              <div>
-                <img src="img/perfyLight.png" alt="perfy" id="logoFooter">
-              </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center" id="copyright">
+                <div class="pt-4 text-center">
+                    <p class="text-white">Maquetado. All rights reserved 2024 -
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning">perfy</strong>
+                        </a>
+                    </p>
+                </div>
             </div>
-  
-            <!-- <div class="col-1 col-md-5 col-lg-4" id="redesFooter">            -->
-            <div class="col-6 col-md-1 col-lg-1 col-xl-1 mx-auto" id="redesFooter">           
-              <div class="text-center pt-4">
-                <ul class="list-unstyled list-inline" id="ulFooter">
-                  <li>
-                    <a href="#" class="btn-floating btn-sm text-white"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-tiktok"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>                
-                  <li>                  
-                    <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>  
-        </div>
-          
-        <hr class="mb-4">
-  
-        <div class="row align-items-center" id="copyright">
-        <div class="pt-4 text-center">
-            <p class="text-white" >Maquetado. All rights reserved 2024 - 
-            <a href="#" style="text-decoration: none;">
-                <strong class="text-warning">perfy</strong>
-            </a>
-            </p>
-        </div>
-        </div> 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
