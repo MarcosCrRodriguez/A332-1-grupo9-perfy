@@ -19,7 +19,7 @@
 
   <header>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid" id="navBar">
+      <div class="container-fluid mx-4" id="navBar">
         <div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +28,10 @@
             </span>
           </button>
         </div>
-        <div class="col-10" id="navMed">
+        <div id="navMed">
           <a href="index.html"><img src="img/perfyLight.png" alt="perfy"></a>
         </div>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav raleway-font" id="ulNavBar">
             <li class="nav-item">
               <a class="nav-link text-white" href="shop.html">Shop</a>
@@ -41,6 +41,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="preguntas.html">FAQ</a>
             </li>
             <span>
               <a href="carrito.html"><img src="img/carrito.png" alt="carrito" id="carrito"></a>
@@ -173,10 +176,10 @@
   <footer class="item" id="footerAlt">
 
     <div class="container-fluid" id="footerDiv">        
-      <div class="row text-center text-md-left" > 
+      <div class="row text-center text-md-left mx-2 p-2"> 
         
-        <div class="col-6 col-md-1 col-lg-2 col-xl-2 mx-auto mt-3 pt-5" id="menuFooter">            
-          <ul class="list-unstyled text-start raleway-font">
+        <div class="col-6 container-fluid d-flex flex-column col-md-1 col-lg-1 col-xl-1 pt-4" id="menuFooter">            
+          <ul class="flex-grow-1 d-flex flex-column justify-content-between list-unstyled text-start raleway-font">
             <li class="text-white">
               <a href="shop.html" class="text-reset text-decoration-none">SHOP</a>
             </li>
@@ -185,32 +188,35 @@
             </li>
             <li class="text-white">
               <a href="contacto.html" class="text-reset text-decoration-none">CONTACTO</a>
-            </li>             
+            </li>   
+            <li class="text-white">
+              <a href="preguntas.html" class="text-reset text-decoration-none">FAQ</a>
+            </li>           
           </ul>
         </div>
         
-        <div class="col-md-10 col-lg-9 col-xl-9 mx-auto mt-3 d-none d-md-block" id="logoFooter">       
+        <div class="col-md-10 col-lg-10 col-xl-10 mt-5 d-none d-md-block" id="logoFooter">       
           <div>
             <img src="img/perfyLight.png" alt="perfy" id="logoFooter">
           </div>
         </div>
 
         <!-- <div class="col-1 col-md-5 col-lg-4" id="redesFooter">            -->
-        <div class="col-6 col-md-1 col-lg-1 col-xl-1 mx-auto" id="redesFooter">           
-          <div class="text-center pt-4">
-            <ul class="list-unstyled list-inline" id="ulFooter">
-              <li>
-                <a href="#" class="btn-floating btn-sm text-white"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-tiktok"></i></a>
-              </li>
-              <li>
-                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>                
-              <li>                  
-                <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
-              </li>
-            </ul>
+          <div class="col-6 col-md-1 col-lg-1 col-xl-1 mx-auto" id="redesFooter">           
+            <div class="container-fluid d-flex flex-column text-end pt-4">
+              <ul class="flex-grow-1 d-flex flex-column justify-content-between list-unstyled list-inline" id="ulFooter">
+                <li>
+                  <a href="#" class="btn-floating btn-sm text-white"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-tiktok"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>                
+                <li>                  
+                  <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+                </li>
+              </ul>
           </div>
         </div>  
     </div>
