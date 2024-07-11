@@ -22,7 +22,7 @@ function updateCartDisplay() {
     cartIcon.setAttribute('data-count', itemCount);
 }
 
-// Agregar event listeners a los botones "Agregar al carrito"
+
 document.querySelectorAll('.btn').forEach(button => {
     button.addEventListener('click', function() {
         const card = this.closest('.card');
@@ -32,5 +32,5 @@ document.querySelectorAll('.btn').forEach(button => {
     });
 });
 
-// Inicializar la visualización del carrito
+
 updateCartDisplay();

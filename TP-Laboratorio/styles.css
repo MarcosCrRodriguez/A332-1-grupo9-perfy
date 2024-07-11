@@ -293,7 +293,7 @@ header {
     color: white;
 }
 
-/* Estilos para el carrito */
+
 .card {
     background-color: #F8FA9E;
     border-radius: 10px;
@@ -307,17 +307,17 @@ header {
     border-top-right-radius: 10px;
 }
 
-/* Ajuste el color de texto para mejorar la legibilidad */
+
 .card-body {
     color: #333;
 }
 
-/* Mantenga el fondo blanco para los inputs de cantidad */
+
 .quantity-input {
     background-color: #ffffff;
 }
 
-/* Ajuste el estilo de los botones si es necesario */
+
 .btn-custom-secondary {
     background-color: #AC97C0;
     border-color: #AC97C0;
@@ -327,4 +327,26 @@ header {
 .btn-custom-secondary:hover {
     background-color: #9A82B0;
     border-color: #9A82B0;
+}
+
+@media (max-width: 767px) {
+    #cartItems .row {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    #cartItems .row:last-child {
+        border-bottom: none;
+    }
+    
+    #cartItems .col-4:first-child {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    #cartItems .row {
+        align-items: center;
+    }
 }
