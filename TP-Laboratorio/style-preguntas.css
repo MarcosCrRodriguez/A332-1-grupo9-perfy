@@ -1,7 +1,7 @@
 .title-page {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     margin-top: 40px;
     margin-bottom: 40px;
     border: 0px;
@@ -9,6 +9,7 @@
     padding: 30px;
     margin-left: 80px;
     margin-right: 80px;
+    align-items: center;
 }
 
 .accordion-button.custom-font-size {
@@ -32,9 +33,11 @@
 } */
  .divMain {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 125vh; 
+    /* height: 100vh;  */
     align-self: stretch;
+    margin-bottom: 20px;
 }
 
 .barra-izquierda {
@@ -50,6 +53,12 @@
 .barra-derecha {
     grid-area: barra-derecha;   
     background-color: rgb(242, 242, 158);
+}
+#divPreguntas{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 /* @media (max-width: 500px) {
