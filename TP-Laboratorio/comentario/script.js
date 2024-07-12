@@ -12,7 +12,7 @@ async function loadComments() {
             }
         });
         const data = await response.json();  
-        console.log(data.record);
+        //console.log(data.record);
 
         showComments(data.record);
         
@@ -32,7 +32,7 @@ function showComments(comentarios){
             emailElement.textContent = `Email: ${comentario.email}`;
 
             const fechaElement = document.createElement('p');
-            fechaElement.textContent = `Fecha: ${comentario.fecha}`;
+            fechaElement.textContent = `Fecha: ${comentario.fechaFormateada}`;
 
             const calificacionElement = document.createElement('p');
             calificacionElement.textContent = `Calificación: ${comentario.calificacion}`;
@@ -96,7 +96,7 @@ document.getElementById('formComentario').addEventListener('submit', (e) => {
 
         // Formatear la fecha en formato día/mes/año
         const fechaFormateada = `${dia}/${mes}/${año}`;
-
+        console.log(fechaFormateada);
         // Mostrar la fecha en el documento HTML
         //document.getElementById('fecha').textContent = `Fecha Actual: ${fechaFormateada}`;
 
