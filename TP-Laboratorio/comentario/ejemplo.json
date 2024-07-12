@@ -1,0 +1,20 @@
+[
+    {
+        "email": "marito@gmail.com",
+        "fechaFormateada": "12/07/2024",
+        "calificacion": "2",
+        "comentario": "Riquisimo!"
+    },
+    {
+        "email": "jorgito@gmail.com",
+        "fechaFormateada": "10/07/2024",
+        "calificacion": "1",
+        "comentario": "Maaaaalisimo!"
+    },
+    {
+        "email": "luciana@gmail.com",
+        "fechaFormateada": "12/07/2024",
+        "calificacion": "3",
+        "comentario": "Me hace mal a la panza!"
+    }
+]

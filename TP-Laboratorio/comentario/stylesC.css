@@ -1,0 +1,169 @@
+:root {
+    --colorFondoNav: #FF4F6F;
+    --colorFondoFooter: #AC97C0;
+    --colorBotonEnviar: #AC97C0;
+}
+
+.containerMain {
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    grid-template-areas: "form mapa";
+    height: 100%;
+    align-self: stretch;
+    justify-items: center; /**/
+    
+}
+
+.form {
+    grid-area: form;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+/* .contenido{
+    grid-area: contenido;
+}
+.footer{
+    grid-area: footer;
+} */
+ 
+.item {
+    background-color: grey;
+
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /*flex-direction: column; - el main no se acomoda - me queda corto*/
+    min-width: 250px;
+
+    font-family: 'Raleway', sans-serif;
+    background: #f8f9fa;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    height: 140px;
+}
+
+#footer{
+    width: 100%;   
+    background-color: var(--colorFondoFooter);     
+    /*display: flex;
+    height: 300px;     */
+    margin-top: auto;
+}
+#ulFooter{
+    font-size: 25px;
+}
+
+.navbar-background {
+    background-color: var(--colorFondoNav);
+}
+/* .navbar{
+    background-color: var(--colorFondoNav);        
+} */
+.navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
+#iconoMenu {
+    width: 30px;
+    height: 30px;
+}
+#iconoMenu:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+#carrito {
+    width: 35px;
+    height: 35px;
+}
+
+/* @media (max-width: 1000px) {
+    #navbarNavDropdown {
+        display: none!important;
+    }
+} */
+/* #footerDiv{
+    background-color: var(--colorFondoFooter);
+} */
+@media (max-width: 1600px) {
+    #navMed {
+        width: 66.67%;
+    }
+}
+
+/* @media (max-width: 800px) {
+    #footerDiv {
+        display: flex;
+        justify-items: flex-start;
+
+    }
+
+    #logoFooter {
+        display: none;
+    }
+
+    #redesFooter {
+        display: none;
+    }
+
+
+
+} */
+@media (max-width: 600px) {
+    .containerMain {
+        grid-template: 1fr 1fr / 100%;
+        grid-template-areas: "form"
+            "mapa";
+    }
+}
+
+
+.comment-box {
+    margin-top: 10px;
+    margin-bottom: 25px;    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    /* background-color: #F8FA9E; */
+    height: auto;
+}
+#divForm, #divMapa {
+    background-color: #F8FA9E;
+    height: 500px;    
+    width: 95%;/**/
+}
+#btnConsulta {
+    background-color: var(--colorBotonEnviar);
+}
+#contenedor{    
+    height: 100%;
+    width: 100%;
+    margin-left: 5px;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+    overflow: auto;    
+}
+#container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;   
+    height: 100%
+}
+
