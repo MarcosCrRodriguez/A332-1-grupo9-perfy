@@ -23,10 +23,16 @@
     background-color: #f8fa9e;
 }
 
-.divMain {
+/* .divMain {
     display: grid;
     grid-template: 100% / 350px 1fr 350px;
     grid-template-areas: "barra-izquierda preguntas barra-derecha";
+    height: 125vh; 
+    align-self: stretch;
+} */
+ .divMain {
+    display: flex;
+    justify-content: center;
     height: 125vh; 
     align-self: stretch;
 }
@@ -46,7 +52,7 @@
     background-color: rgb(242, 242, 158);
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .divMain {
         height: 218vh; 
         grid-template: auto / 1fr;
@@ -74,4 +80,4 @@
     .accordion-button.custom-font-size {
         font-size: 1em;
     }
-}
+} */
