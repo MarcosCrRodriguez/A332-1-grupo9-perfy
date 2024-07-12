@@ -360,3 +360,15 @@ header {
     padding: 2px 6px;
     font-size: 11px;
 }
+df-messenger {
+    --df-messenger-bot-message: #878fac;
+    --df-messenger-button-titlebar-color: #AC97C0;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: #FF4F6F;
+  }
+
+  
+
+  
