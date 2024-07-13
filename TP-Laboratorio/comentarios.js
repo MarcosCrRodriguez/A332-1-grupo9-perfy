@@ -1,7 +1,11 @@
-const apiUrl = 'https://api.jsonbin.io/v3/b/66917958ad19ca34f886abab';
-const apiKey = '$2a$10$sNZLYjuLxN.hrL29yzXdle31WS4a/q7cFSwcwduy382aB11WfnSZO';
+const apiUrl = 'https://api.jsonbin.io/v3/b/6691ca72acd3cb34a86553a4';
+const apiKey = '$2a$10$M/W5eANQN34xOP01nuf5Du4w783lqxJGA/XMrvt3FxphmgrIQK3nu';
 
 const commentsContainer = document.getElementById("comments-container");
+const ratingFilter = document.getElementById("rating-filter");
+const averageRatingElement = document.getElementById("average-rating");
+
+let allComments = [];
 
 async function loadComments() {
     try {
@@ -11,10 +15,18 @@ async function loadComments() {
             }
         });
         const data = await response.json();  
-        showComments(data.record);
+        allComments = data.record;
+        updateAverageRating();
+        showComments(allComments);
     } catch (error) {
         console.error('Error al cargar los datos:', error);
     }
+}
+
+function updateAverageRating() {
+    const totalRating = allComments.reduce((sum, comment) => sum + comment.calificacion, 0);
+    const averageRating = totalRating / allComments.length;
+    averageRatingElement.textContent = `Calificación promedio: ${averageRating.toFixed(1)} ⭐`;
 }
 
 function showComments(comentarios) {
@@ -25,13 +37,37 @@ function showComments(comentarios) {
     });
 }
 
+function filterComments() {
+    const selectedRating = parseInt(ratingFilter.value);
+    if (selectedRating === 0) {
+        showComments(allComments);
+    } else {
+        const filteredComments = allComments.filter(comment => comment.calificacion === selectedRating);
+        showComments(filteredComments);
+    }
+}
 function createCommentCard(comentario) {
     const div = document.createElement('div');
     div.className = 'col-md-4 mb-4';
+
+    
+    function getEmojiForRating(rating) {
+        switch(rating) {
+            case 1: return '🙂'; 
+            case 2: return '😊'; 
+            case 3: return '😄'; 
+            case 4: return '😁'; 
+            case 5: return '🤩';
+            default: return '😊'; 
+        }
+    }
+
+    const ratingEmoji = getEmojiForRating(comentario.calificacion);
+
     div.innerHTML = `
         <div class="comment-card">
             <div class="comment-header">
-                <div class="comment-avatar">😊</div>
+                <div class="comment-avatar">${ratingEmoji}</div>
                 <div class="comment-user-info">
                     <h5 class="comment-username">${comentario.email}</h5>
                     <p class="comment-date">${comentario.fechaFormateada}</p>
@@ -89,5 +125,6 @@ document.getElementById('formComentario').addEventListener('submit', (e) => {
     addComment(nuevoComentario);
     e.target.reset();
 });
+ratingFilter.addEventListener('change', filterComments);
 
 loadComments();
