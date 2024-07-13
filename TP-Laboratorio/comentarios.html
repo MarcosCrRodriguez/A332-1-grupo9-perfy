@@ -58,6 +58,22 @@
     <main class="comments-page raleway-font">
       <div class="container">
           <h1 class="text-center mb-5">Lo que dicen nuestros clientes</h1>
+          <div class="row mb-4">
+            <div class="col-md-6">
+                <div id="average-rating" class="mb-2">Calificación promedio: </div>
+            </div>
+            <div class="col-md-6">
+                <label for="rating-filter" class="form-label">Filtrar por calificación:</label>
+                <select id="rating-filter" class="form-select">
+                    <option value="0">Todas las calificaciones</option>
+                    <option value="5">5 estrellas</option>
+                    <option value="4">4 estrellas</option>
+                    <option value="3">3 estrellas</option>
+                    <option value="2">2 estrellas</option>
+                    <option value="1">1 estrella</option>
+                </select>
+            </div>
+        </div>
           
           <div id="comments-container" class="row mb-5">
               <!-- Los comentarios se cargarán aquí dinámicamente -->
