@@ -1,5 +1,5 @@
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -70,7 +70,6 @@
   }
 }
 
-
 /* main image */
 
 .cans-image {
@@ -80,8 +79,8 @@
 
 @media (max-width: 1250px) {
   .cans-image {
-      width: 70%;
-      height: 70%;
+    width: 70%;
+    height: 70%;
   }
 }
 
@@ -98,7 +97,6 @@
     transform: perspective(600px) rotateY(0deg);
   }
 }
-
 
 /* carousel */
 
@@ -132,12 +130,14 @@
   border-radius: 5%;
   transform: translateX(-60%) scale(0.8);
 }
+
 @media (min-width: 1050px) {
   .carousel-card-1 {
-      width: 500px;
-      height: 500px;
+    width: 500px;
+    height: 500px;
   }
 }
+
 .carousel-card-2 {
   background-color: var(--pink-color);
   width: 50%;
@@ -149,12 +149,14 @@
   border-radius: 5%;
   transform: translateX(0%) scale(1.05);
 }
+
 @media (min-width: 1050px) {
   .carousel-card-2 {
-      width: 500px;
-      height: 500px;
+    width: 500px;
+    height: 500px;
   }
 }
+
 .carousel-card-3 {
   background-color: var(--pink-color);
   width: 50%;
@@ -166,10 +168,11 @@
   border-radius: 5%;
   transform: translateX(60%) scale(0.8);
 }
+
 @media (min-width: 1050px) {
   .carousel-card-3 {
-      width: 500px;
-      height: 500px;
+    width: 500px;
+    height: 500px;
   }
 }
 
@@ -177,6 +180,7 @@
   width: 100%;
   /* height: 450px; */
 }
+
 @media (min-width: 1050px) {
   .carousel-img {
     width: 300px;
@@ -189,23 +193,27 @@
 .info-cards-container {
   background-color: #9ed8db;
 }
+
 @media (max-width: 1400px) {
   .info-cards-container {
     padding-left: 35%;
     padding-right: 35%;
   }
 }
+
 @media (max-width: 1000px) {
   .info-cards-container {
     /* padding-left: 35%; */
     padding-right: 45%;
   }
 }
+
 .info-card {
   color: white;
   height: 400px;
   width: 400px;
   border-radius: 20px;
+  border-color: #9ed8db;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,6 +235,7 @@
     font-size: 26px;
   }
 }
+
 @media (max-width: 1000px) {
   .info-card {
     height: 200px;
@@ -235,66 +244,82 @@
   }
 }
 
-.card-icon {
-  height: 200px;
+.info-card .card-img-container {
+  height: 70%; /* 80% de la altura de la tarjeta para la imagen */
 }
+
+.card-icon {
+  height: 150px;
+}
+
 @media (max-width: 1000px) {
   .card-icon {
     height: 100px;
   }
 }
+
+.info-card .card-text {
+  height: 30%; /* 20% de la altura de la tarjeta para el texto */
+}
+
 .card-1 {
-  background-image: linear-gradient(25deg,
-      hsl(333deg 100% 75%) 0%,
-      hsl(340deg 94% 73%) 9%,
-      hsl(347deg 90% 71%) 18%,
-      hsl(355deg 85% 69%) 27%,
-      hsl(2deg 82% 68%) 36%,
-      hsl(9deg 78% 66%) 45%,
-      hsl(16deg 78% 65%) 55%,
-      hsl(22deg 80% 66%) 64%,
-      hsl(28deg 83% 67%) 73%,
-      hsl(34deg 86% 68%) 82%,
-      hsl(41deg 89% 68%) 91%,
-      hsl(47deg 92% 69%) 100%);
+  background-image: linear-gradient(
+    25deg,
+    hsl(333deg 100% 75%) 0%,
+    hsl(340deg 94% 73%) 9%,
+    hsl(347deg 90% 71%) 18%,
+    hsl(355deg 85% 69%) 27%,
+    hsl(2deg 82% 68%) 36%,
+    hsl(9deg 78% 66%) 45%,
+    hsl(16deg 78% 65%) 55%,
+    hsl(22deg 80% 66%) 64%,
+    hsl(28deg 83% 67%) 73%,
+    hsl(34deg 86% 68%) 82%,
+    hsl(41deg 89% 68%) 91%,
+    hsl(47deg 92% 69%) 100%
+  );
 }
 
 .card-2 {
-  background-image: linear-gradient(345deg,
-      hsl(333deg 100% 75%) 0%,
-      hsl(339deg 99% 77%) 4%,
-      hsl(346deg 98% 79%) 9%,
-      hsl(354deg 97% 80%) 13%,
-      hsl(3deg 96% 81%) 16%,
-      hsl(12deg 95% 80%) 20%,
-      hsl(20deg 94% 78%) 24%,
-      hsl(27deg 94% 77%) 28%,
-      hsl(33deg 93% 75%) 32%,
-      hsl(38deg 93% 73%) 36%,
-      hsl(43deg 93% 71%) 39%,
-      hsl(47deg 92% 69%) 43%,
-      hsl(48deg 83% 71%) 47%,
-      hsl(49deg 72% 72%) 51%,
-      hsl(52deg 60% 73%) 56%,
-      hsl(57deg 48% 74%) 60%,
-      hsl(65deg 39% 75%) 65%,
-      hsl(78deg 34% 77%) 69%,
-      hsl(100deg 28% 79%) 74%,
-      hsl(135deg 27% 79%) 80%,
-      hsl(159deg 33% 77%) 85%,
-      hsl(174deg 38% 75%) 92%,
-      hsl(183deg 46% 74%) 100%);
+  background-image: linear-gradient(
+    345deg,
+    hsl(333deg 100% 75%) 0%,
+    hsl(339deg 99% 77%) 4%,
+    hsl(346deg 98% 79%) 9%,
+    hsl(354deg 97% 80%) 13%,
+    hsl(3deg 96% 81%) 16%,
+    hsl(12deg 95% 80%) 20%,
+    hsl(20deg 94% 78%) 24%,
+    hsl(27deg 94% 77%) 28%,
+    hsl(33deg 93% 75%) 32%,
+    hsl(38deg 93% 73%) 36%,
+    hsl(43deg 93% 71%) 39%,
+    hsl(47deg 92% 69%) 43%,
+    hsl(48deg 83% 71%) 47%,
+    hsl(49deg 72% 72%) 51%,
+    hsl(52deg 60% 73%) 56%,
+    hsl(57deg 48% 74%) 60%,
+    hsl(65deg 39% 75%) 65%,
+    hsl(78deg 34% 77%) 69%,
+    hsl(100deg 28% 79%) 74%,
+    hsl(135deg 27% 79%) 80%,
+    hsl(159deg 33% 77%) 85%,
+    hsl(174deg 38% 75%) 92%,
+    hsl(183deg 46% 74%) 100%
+  );
 }
 
 .card-3 {
-  background-image: linear-gradient(340deg,
-      hsl(13deg 77% 65%) 0%,
-      hsl(351deg 64% 62%) 14%,
-      hsl(329deg 54% 59%) 28%,
-      hsl(307deg 45% 56%) 55%,
-      hsl(285deg 38% 52%) 77%,
-      hsl(264deg 33% 49%) 89%,
-      hsl(242deg 31% 45%) 100%);
+  background-image: linear-gradient(
+    340deg,
+    hsl(13deg 77% 65%) 0%,
+    hsl(351deg 64% 62%) 14%,
+    hsl(329deg 54% 59%) 28%,
+    hsl(307deg 45% 56%) 55%,
+    hsl(285deg 38% 52%) 77%,
+    hsl(264deg 33% 49%) 89%,
+    hsl(242deg 31% 45%) 100%
+  );
 }
 
 /* others */
@@ -316,4 +341,3 @@
   background-color: var(--light-blue-color);
   margin-top: auto;
 }
-
